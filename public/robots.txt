@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.bhartiyanairambulanceservices.in/
+
+# Sitemaps
+Sitemap: https://www.bhartiyanairambulanceservices.in/sitemap.xml

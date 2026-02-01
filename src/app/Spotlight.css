@@ -1,0 +1,36 @@
+/* Spotlight.css */
+.spotlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 30%, transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .spotlight-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 20%, transparent 50%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: spotlight-pulse 2s infinite;
+  }
+  
+  @keyframes spotlight-pulse {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
