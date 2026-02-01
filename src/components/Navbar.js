@@ -55,13 +55,13 @@ const Navbar = () => {
           >
             Our Work
           </Link>
-          <Link
+          {/* <Link
             href="/news"
             className="text-medical-dark font-medium hover:text-medical-blue transition-colors"
             onClick={handleLinkClick}
           >
             News
-          </Link>
+          </Link> */}
           <Link
             href="/corporate"
             className="text-medical-dark font-medium hover:text-medical-blue transition-colors"
