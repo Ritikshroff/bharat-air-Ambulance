@@ -1,4 +1,5 @@
 import { servicesData } from "@/data/servicesData";
+import { cities } from "@/data/cities";
 
 export default function sitemap() {
   const baseUrl = "https://bharatairambulance.com";
@@ -21,5 +22,13 @@ export default function sitemap() {
     priority: 0.9,
   }));
 
-  return [...staticPages, ...servicePages];
+  // Dynamic city landing pages
+  const cityPages = cities.map((city) => ({
+    url: `${baseUrl}/air-ambulance-service-in-${city.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...servicePages, ...cityPages];
 }

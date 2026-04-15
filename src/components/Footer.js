@@ -169,6 +169,91 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Major Cities - Internal Linking Section */}
+        <div className="border-t border-white/5 pt-12 mb-16">
+          <h4 className="text-lg font-bold mb-8 text-center md:text-left">
+            Major Cities Covered
+          </h4>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-3 gap-x-4 text-xs text-gray-500">
+            <a
+              href="/air-ambulance-service-in-delhi"
+              className="hover:text-medical-red transition-colors"
+            >
+              Air Ambulance Delhi
+            </a>
+            <a
+              href="/air-ambulance-service-in-mumbai"
+              className="hover:text-medical-red transition-colors"
+            >
+              Air Ambulance Mumbai
+            </a>
+            <a
+              href="/air-ambulance-service-in-bangalore"
+              className="hover:text-medical-red transition-colors"
+            >
+              Air Ambulance Bangalore
+            </a>
+            <a
+              href="/air-ambulance-service-in-hyderabad"
+              className="hover:text-medical-red transition-colors"
+            >
+              Air Ambulance Hyderabad
+            </a>
+            <a
+              href="/air-ambulance-service-in-chennai"
+              className="hover:text-medical-red transition-colors"
+            >
+              Air Ambulance Chennai
+            </a>
+            <a
+              href="/air-ambulance-service-in-kolkata"
+              className="hover:text-medical-red transition-colors"
+            >
+              Air Ambulance Kolkata
+            </a>
+            <a
+              href="/air-ambulance-service-in-pune"
+              className="hover:text-medical-red transition-colors"
+            >
+              Air Ambulance Pune
+            </a>
+            <a
+              href="/air-ambulance-service-in-ahmedabad"
+              className="hover:text-medical-red transition-colors"
+            >
+              Air Ambulance Ahmedabad
+            </a>
+            <a
+              href="/air-ambulance-service-in-lucknow"
+              className="hover:text-medical-red transition-colors"
+            >
+              Air Ambulance Lucknow
+            </a>
+            <a
+              href="/air-ambulance-service-in-patna"
+              className="hover:text-medical-red transition-colors"
+            >
+              Air Ambulance Patna
+            </a>
+            <a
+              href="/air-ambulance-service-in-chandigarh"
+              className="hover:text-medical-red transition-colors"
+            >
+              Air Ambulance Chandigarh
+            </a>
+            <a
+              href="/air-ambulance-service-in-guwahati"
+              className="hover:text-medical-red transition-colors"
+            >
+              Air Ambulance Guwahati
+            </a>
+          </div>
+          <p className="mt-4 text-[10px] text-gray-600">
+            * We serve all 50+ major cities and remote areas across India with
+            24/7 dedicated support.
+          </p>
+        </div>
+
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-gray-500 text-xs">
             © 2024 Bharat Air Ambulance and Funeral Services. All Rights
