@@ -169,88 +169,90 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Major Cities - Internal Linking Section */}
-        <div className="border-t border-white/5 pt-12 mb-16">
-          <h4 className="text-lg font-bold mb-8 text-center md:text-left">
-            Major Cities Covered
-          </h4>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-3 gap-x-4 text-xs text-gray-500">
-            <a
-              href="/air-ambulance-service-in-delhi"
-              className="hover:text-medical-red transition-colors"
-            >
-              Air Ambulance Delhi
-            </a>
-            <a
-              href="/air-ambulance-service-in-mumbai"
-              className="hover:text-medical-red transition-colors"
-            >
-              Air Ambulance Mumbai
-            </a>
-            <a
-              href="/air-ambulance-service-in-bangalore"
-              className="hover:text-medical-red transition-colors"
-            >
-              Air Ambulance Bangalore
-            </a>
-            <a
-              href="/air-ambulance-service-in-hyderabad"
-              className="hover:text-medical-red transition-colors"
-            >
-              Air Ambulance Hyderabad
-            </a>
-            <a
-              href="/air-ambulance-service-in-chennai"
-              className="hover:text-medical-red transition-colors"
-            >
-              Air Ambulance Chennai
-            </a>
-            <a
-              href="/air-ambulance-service-in-kolkata"
-              className="hover:text-medical-red transition-colors"
-            >
-              Air Ambulance Kolkata
-            </a>
-            <a
-              href="/air-ambulance-service-in-pune"
-              className="hover:text-medical-red transition-colors"
-            >
-              Air Ambulance Pune
-            </a>
-            <a
-              href="/air-ambulance-service-in-ahmedabad"
-              className="hover:text-medical-red transition-colors"
-            >
-              Air Ambulance Ahmedabad
-            </a>
-            <a
-              href="/air-ambulance-service-in-lucknow"
-              className="hover:text-medical-red transition-colors"
-            >
-              Air Ambulance Lucknow
-            </a>
-            <a
-              href="/air-ambulance-service-in-patna"
-              className="hover:text-medical-red transition-colors"
-            >
-              Air Ambulance Patna
-            </a>
-            <a
-              href="/air-ambulance-service-in-chandigarh"
-              className="hover:text-medical-red transition-colors"
-            >
-              Air Ambulance Chandigarh
-            </a>
-            <a
-              href="/air-ambulance-service-in-guwahati"
-              className="hover:text-medical-red transition-colors"
-            >
-              Air Ambulance Guwahati
-            </a>
+        {/* Major Services & Cities - Crawlable Internal Linking Matrix */}
+        <div className="border-t border-white/10 pt-12 mb-16 space-y-8">
+          <div>
+            <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">
+              Air Ambulance Services Across India
+            </h4>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-2 gap-x-4 text-xs text-gray-400">
+              <a href="/air-ambulance-service-in-delhi" className="hover:text-medical-red transition-colors">Air Ambulance Delhi</a>
+              <a href="/air-ambulance-service-in-mumbai" className="hover:text-medical-red transition-colors">Air Ambulance Mumbai</a>
+              <a href="/air-ambulance-service-in-bangalore" className="hover:text-medical-red transition-colors">Air Ambulance Bangalore</a>
+              <a href="/air-ambulance-service-in-hyderabad" className="hover:text-medical-red transition-colors">Air Ambulance Hyderabad</a>
+              <a href="/air-ambulance-service-in-chennai" className="hover:text-medical-red transition-colors">Air Ambulance Chennai</a>
+              <a href="/air-ambulance-service-in-kolkata" className="hover:text-medical-red transition-colors">Air Ambulance Kolkata</a>
+              <a href="/air-ambulance-service-in-pune" className="hover:text-medical-red transition-colors">Air Ambulance Pune</a>
+              <a href="/air-ambulance-service-in-ahmedabad" className="hover:text-medical-red transition-colors">Air Ambulance Ahmedabad</a>
+              <a href="/air-ambulance-service-in-lucknow" className="hover:text-medical-red transition-colors">Air Ambulance Lucknow</a>
+              <a href="/air-ambulance-service-in-patna" className="hover:text-medical-red transition-colors">Air Ambulance Patna</a>
+              <a href="/air-ambulance-service-in-chandigarh" className="hover:text-medical-red transition-colors">Air Ambulance Chandigarh</a>
+              <a href="/air-ambulance-service-in-guwahati" className="hover:text-medical-red transition-colors">Air Ambulance Guwahati</a>
+            </div>
           </div>
-          <p className="mt-4 text-[10px] text-gray-600">
-            * We serve all 50+ major cities and remote areas across India with
-            24/7 dedicated support.
+
+          <div>
+            <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">
+              Dead Body Freezer Box on Rent (Doorstep Delivery in 30 Mins)
+            </h4>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-2 gap-x-4 text-xs text-gray-400">
+              <a href="/dead-body-freezer-box-in-delhi" className="hover:text-medical-red transition-colors">Freezer Box Delhi</a>
+              <a href="/dead-body-freezer-box-in-mumbai" className="hover:text-medical-red transition-colors">Freezer Box Mumbai</a>
+              <a href="/dead-body-freezer-box-in-bangalore" className="hover:text-medical-red transition-colors">Freezer Box Bangalore</a>
+              <a href="/dead-body-freezer-box-in-hyderabad" className="hover:text-medical-red transition-colors">Freezer Box Hyderabad</a>
+              <a href="/dead-body-freezer-box-in-chennai" className="hover:text-medical-red transition-colors">Freezer Box Chennai</a>
+              <a href="/dead-body-freezer-box-in-kolkata" className="hover:text-medical-red transition-colors">Freezer Box Kolkata</a>
+              <a href="/dead-body-freezer-box-in-pune" className="hover:text-medical-red transition-colors">Freezer Box Pune</a>
+              <a href="/dead-body-freezer-box-in-ahmedabad" className="hover:text-medical-red transition-colors">Freezer Box Ahmedabad</a>
+              <a href="/dead-body-freezer-box-in-lucknow" className="hover:text-medical-red transition-colors">Freezer Box Lucknow</a>
+              <a href="/dead-body-freezer-box-in-jaipur" className="hover:text-medical-red transition-colors">Freezer Box Jaipur</a>
+              <a href="/dead-body-freezer-box-in-chandigarh" className="hover:text-medical-red transition-colors">Freezer Box Chandigarh</a>
+              <a href="/dead-body-freezer-box-in-varanasi" className="hover:text-medical-red transition-colors">Freezer Box Varanasi</a>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">
+              Hearse Van & Mortuary Transport Services
+            </h4>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-2 gap-x-4 text-xs text-gray-400">
+              <a href="/hearse-van-service-in-delhi" className="hover:text-medical-red transition-colors">Hearse Van Delhi</a>
+              <a href="/hearse-van-service-in-mumbai" className="hover:text-medical-red transition-colors">Hearse Van Mumbai</a>
+              <a href="/hearse-van-service-in-bangalore" className="hover:text-medical-red transition-colors">Hearse Van Bangalore</a>
+              <a href="/hearse-van-service-in-hyderabad" className="hover:text-medical-red transition-colors">Hearse Van Hyderabad</a>
+              <a href="/hearse-van-service-in-chennai" className="hover:text-medical-red transition-colors">Hearse Van Chennai</a>
+              <a href="/hearse-van-service-in-kolkata" className="hover:text-medical-red transition-colors">Hearse Van Kolkata</a>
+              <a href="/hearse-van-service-in-pune" className="hover:text-medical-red transition-colors">Hearse Van Pune</a>
+              <a href="/hearse-van-service-in-ahmedabad" className="hover:text-medical-red transition-colors">Hearse Van Ahmedabad</a>
+              <a href="/hearse-van-service-in-lucknow" className="hover:text-medical-red transition-colors">Hearse Van Lucknow</a>
+              <a href="/hearse-van-service-in-jaipur" className="hover:text-medical-red transition-colors">Hearse Van Jaipur</a>
+              <a href="/hearse-van-service-in-patna" className="hover:text-medical-red transition-colors">Hearse Van Patna</a>
+              <a href="/hearse-van-service-in-indore" className="hover:text-medical-red transition-colors">Hearse Van Indore</a>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">
+              Cremation Services & Antim Sanskar Management
+            </h4>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-2 gap-x-4 text-xs text-gray-400">
+              <a href="/cremation-services-in-delhi" className="hover:text-medical-red transition-colors">Cremation in Delhi</a>
+              <a href="/cremation-services-in-mumbai" className="hover:text-medical-red transition-colors">Cremation in Mumbai</a>
+              <a href="/cremation-services-in-bangalore" className="hover:text-medical-red transition-colors">Cremation in Bangalore</a>
+              <a href="/cremation-services-in-hyderabad" className="hover:text-medical-red transition-colors">Cremation in Hyderabad</a>
+              <a href="/cremation-services-in-chennai" className="hover:text-medical-red transition-colors">Cremation in Chennai</a>
+              <a href="/cremation-services-in-kolkata" className="hover:text-medical-red transition-colors">Cremation in Kolkata</a>
+              <a href="/cremation-services-in-pune" className="hover:text-medical-red transition-colors">Cremation in Pune</a>
+              <a href="/cremation-services-in-ahmedabad" className="hover:text-medical-red transition-colors">Cremation in Ahmedabad</a>
+              <a href="/cremation-services-in-lucknow" className="hover:text-medical-red transition-colors">Cremation in Lucknow</a>
+              <a href="/cremation-services-in-varanasi" className="hover:text-medical-red transition-colors">Cremation in Varanasi</a>
+              <a href="/cremation-services-in-haridwar" className="hover:text-medical-red transition-colors">Cremation in Haridwar</a>
+              <a href="/asthi-visarjan-services-in-varanasi" className="hover:text-medical-red transition-colors">Asthi Visarjan Kashi</a>
+            </div>
+          </div>
+
+          <p className="mt-4 text-[10px] text-gray-500">
+            * 24/7 dedicated command center coordination serving all 50+ major cities and towns across India.
           </p>
         </div>
 

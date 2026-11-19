@@ -3,8 +3,12 @@ export const cities = [
     name: "Delhi",
     slug: "delhi",
     airport: "Indira Gandhi International Airport (DEL)",
-    hospitals: ["AIIMS", "Apollo Hospital", "Max Super Speciality", "Fortis Escorts"],
-    localContext: "In Delhi, navigating through heavy traffic in areas like Connaught Place or Outer Ring Road can delay ground transfers. Our air ambulance service provides a crucial bypass, ensuring patients reach multi-speciality centers like AIIMS within the golden hour.",
+    hospitals: ["AIIMS New Delhi", "Safdarjung Hospital", "Apollo Hospital", "Max Super Speciality Saket", "Fortis Escorts"],
+    cremationGrounds: ["Nigambodh Ghat (Kashmere Gate)", "Lodhi Road Electric Crematorium", "Punjabi Bagh Cremation Ground", "Green Park Shamshan Ghat"],
+    mortuaries: ["AIIMS Mortuary Center", "Safdarjung Cold Storage", "Subroto Park Mortuary"],
+    zones: ["South Delhi", "Dwarka", "Rohini", "Connaught Place", "Noida", "Gurgaon"],
+    geo: { latitude: 28.6139, longitude: 77.2090 },
+    localContext: "In Delhi NCR, navigating through heavy traffic in areas like Ring Road, Connaught Place, and Gurugram expressway requires swift coordination. We maintain dedicated fleet bases in South Delhi, Dwarka, and East Delhi for 15-minute dispatch.",
     caseStudy: {
       patient: "Mr. Raj Sharma",
       from: "Max Hospital, Saket",
@@ -16,8 +20,12 @@ export const cities = [
     name: "Mumbai",
     slug: "mumbai",
     airport: "Chhatrapati Shivaji Maharaj International Airport (BOM)",
-    hospitals: ["Lilavati Hospital", "Kokilaben Dhirubhai Ambani Hospital", "Nanavati Max", "Breach Candy"],
-    localContext: "Mumbai's coastal geography and monsoon-related traffic snarls make rapid ground transport unpredictable. Our air ambulance teams specialize in bed-to-bed transfers from South Mumbai to international hubs, utilizing BOM effectively.",
+    hospitals: ["Lilavati Hospital", "Kokilaben Dhirubhai Ambani Hospital", "Nanavati Max", "Breach Candy Hospital", "Hinduja Hospital"],
+    cremationGrounds: ["Banganga Crematorium (Walkeshwar)", "Shivaji Park Crematorium (Dadar)", "Chandanwadi Electric Crematorium (Marine Lines)", "Oshiwara Cremation Ground"],
+    mortuaries: ["JJ Hospital Mortuary", "KEM Hospital Cold Storage", "Cooper Hospital Mortuary"],
+    zones: ["South Mumbai", "Bandra-Andheri Western Suburbs", "Thane", "Navi Mumbai"],
+    geo: { latitude: 19.0760, longitude: 72.8777 },
+    localContext: "Mumbai's coastal geography and intense monsoon transit require specialized AC mortuary vehicles and rapid green corridor clearance connecting Western Suburbs, South Mumbai, and BOM Cargo Terminals.",
     caseStudy: {
       patient: "A. Deshmukh",
       from: "Nanavati Max, Mumbai",
@@ -29,8 +37,12 @@ export const cities = [
     name: "Bangalore",
     slug: "bangalore",
     airport: "Kempegowda International Airport (BLR)",
-    hospitals: ["Manipal Hospital", "Narayana Health", "Aster CMI", "St. John's"],
-    localContext: "Known for IT-hub congestion, Bangalore's traffic can turn a 20km trip into a 2-hour ordeal. We coordinate closely with HAL and Kempegowda airports to provide the fastest medical evacuation for tech professionals and families.",
+    hospitals: ["Manipal Hospital", "Narayana Health City", "Aster CMI", "St. John's Medical College", "Apollo Bannerghatta"],
+    cremationGrounds: ["Wilson Garden Electric Crematorium", "Kalpalli Crematorium (CV Raman Nagar)", "Hebbal Electric Crematorium", "Banashankari Cremation Ground"],
+    mortuaries: ["Victoria Hospital Mortuary", "Bowring Hospital Cold Storage", "Ramaiah Mortuary"],
+    zones: ["Koramangala", "Indiranagar", "Whitefield", "Jayanagar", "Hebbal", "Electronic City"],
+    geo: { latitude: 12.9716, longitude: 77.5946 },
+    localContext: "To overcome Bangalore's outer ring road and IT-corridor congestion, our ambulance and hearse fleet is stationed strategically across Hebbal, Electronic City, and Koramangala for rapid response.",
     caseStudy: {
       patient: "K. Reddy",
       from: "Aster CMI, Bangalore",
@@ -42,8 +54,12 @@ export const cities = [
     name: "Hyderabad",
     slug: "hyderabad",
     airport: "Rajiv Gandhi International Airport (HYD)",
-    hospitals: ["Apollo Health City", "Yashoda Hospitals", "AIG Hospitals", "KIMS"],
-    localContext: "Hyderabad's medical tourism is booming. We provide seamless shifts from Hitech City to the airport, ensuring international patients receiving advanced treatment can return home with full ICU support.",
+    hospitals: ["Apollo Health City Jubilee Hills", "Yashoda Hospitals", "AIG Hospitals Gachibowli", "KIMS Secunderabad"],
+    cremationGrounds: ["Mahaprasthanam (Jubilee Hills)", "Amberpet Crematorium", "Bansilalpet Hindu Shamshan Ghat", "Panjagutta Crematorium"],
+    mortuaries: ["Osmania General Hospital Mortuary", "Gandhi Hospital Cold Storage"],
+    zones: ["Hitech City", "Gachibowli", "Banjara Hills", "Secunderabad", "Madhapur"],
+    geo: { latitude: 17.3850, longitude: 78.4867 },
+    localContext: "Hyderabad's medical tourism hub requires seamless bed-to-bed transfers from Gachibowli and Banjara Hills to RGIA, along with dignified funeral and freezer box coordination across the Twin Cities.",
     caseStudy: {
       patient: "S. Khan",
       from: "AIG Hospitals, Hyderabad",
@@ -55,8 +71,12 @@ export const cities = [
     name: "Chennai",
     slug: "chennai",
     airport: "Chennai International Airport (MAA)",
-    hospitals: ["Apollo Greams Road", "MIOT International", "Fortis Malar", "SIMS"],
-    localContext: "As the 'Health Capital of India', Chennai receives cases from across SE Asia. Our standby aero-medical crew at MAA ensures that critical transfers to Greams Road are handled with precision ICU coordination.",
+    hospitals: ["Apollo Hospitals Greams Road", "MIOT International", "Fortis Malar", "SIMS Hospital Vadapalani"],
+    cremationGrounds: ["Besant Nagar Crematorium", "Mylapore Electric Crematorium", "Otteri Cremation Ground", "Kilpauk Cemetery & Crematorium"],
+    mortuaries: ["Rajiv Gandhi Government General Hospital Mortuary", "Kilpauk Medical College Cold Storage"],
+    zones: ["Anna Nagar", "Mylapore", "Adyar", "T. Nagar", "Velachery", "Guindy"],
+    geo: { latitude: 13.0827, longitude: 80.2707 },
+    localContext: "As South India's premier medical gateway, our Chennai operations handle international patient flights at MAA and 24/7 freezer box / hearse transport connecting key hospitals on Greams Road and Mount Road.",
     caseStudy: {
       patient: "L. Nguyen",
       from: "MIOT International, Chennai",
@@ -68,8 +88,12 @@ export const cities = [
     name: "Kolkata",
     slug: "kolkata",
     airport: "Netaji Subhash Chandra Bose International Airport (CCU)",
-    hospitals: ["Apollo Multispeciality", "AMRI Hospitals", "Fortis Kolkata", "Woodlands"],
-    localContext: "Kolkata serves as the primary medical hub for Eastern India and neighboring countries like Bangladesh. We offer swift evacuations from CCU to bypass city congestion for patients from the Northeast.",
+    hospitals: ["Apollo Multispeciality Salt Lake", "AMRI Hospitals Dhakuria", "Fortis Hospital Anandapur", "Woodlands Multispeciality"],
+    cremationGrounds: ["Keoratola Burning Ghat", "Nimtala Ghat (Shobhabazar)", "Siriti Burning Ghat", "Kasi Mitra Ghat"],
+    mortuaries: ["Calcutta Medical College Mortuary", "SSKM Hospital Cold Storage", "RG Kar Medical College"],
+    zones: ["Salt Lake", "New Town", "Alipore", "Ballygunge", "Howrah", "Dum Dum"],
+    geo: { latitude: 22.5726, longitude: 88.3639 },
+    localContext: "Serving Eastern India and neighboring states, we coordinate rapid transfers to CCU cargo and passenger terminals, and provide immediate hearse/freezer assistance to sacred ghats like Keoratola and Nimtala.",
     caseStudy: {
       patient: "B. Dasgupta",
       from: "Apollo Multispeciality",
@@ -77,43 +101,322 @@ export const cities = [
       detail: "Critical oncological transfer involving complex monitoring and pain management throughout the international transit."
     }
   },
-  { name: "Ahmedabad", slug: "ahmedabad", airport: "Sardar Vallabhbhai Patel International Airport (AMD)", hospitals: ["Zydus Hospital", "KD Hospital", "Apollo Ahmedabad"], localContext: "Serving Gujarat's industrial belt, our Ahmedabad team ensures rapid response for industrial trauma cases.", caseStudy: { patient: "M. Patel", from: "Zydus Hospital", to: "London, UK", detail: "Stroke recovery transfer with specialized physiotherapist and neuro-nurse escort." } },
-  { name: "Pune", slug: "pune", airport: "Pune Airport (PNQ)", hospitals: ["Jupiter Hospital", "Ruby Hall Clinic", "Sahyadri Hospital"], localContext: "With limited runway slots at PNQ, our coordination team ensures priority departure for emergency medical flights.", caseStudy: { patient: "P. Kulkarni", from: "Ruby Hall", to: "Johns Hopkins, USA", detail: "Pediatric ICU transfer requiring specialized neo-natal equipment and pediatric cardiologist." } },
-  { name: "Patna", slug: "patna", airport: "Jay Prakash Narayan Airport (PAT)", hospitals: ["Paras HMRI", "Ruban Hospital", "AIIMS Patna"], localContext: "Patna's medical infrastructure is rapidly evolving; we bridge the gap for patients needing super-speciality care in Delhi.", caseStudy: { patient: "R. Singh", from: "Paras HMRI, Patna", to: "Medanta, Gurgaon", detail: "Emergency transfer of a patient with 60% burns requiring specialized skin-care protocol during flight." } },
-  { name: "Lucknow", slug: "lucknow", airport: "Chaudhary Charan Singh Airport (LKO)", hospitals: ["Medanta Lucknow", "SGPGI", "Apollomedics"], localContext: "We coordinate with Green Corridor authorities in Lucknow to ensure zero-traffic ground transit for critical patients.", caseStudy: { patient: "V. Tiwari", from: "Medanta Lucknow", to: "AIIMS Delhi", detail: "Organ transport and recipient transfer coordinated within a 4-hour window." } },
-  // Adding generic data for remaining cities to maintain depth
-  { name: "Jaipur", slug: "jaipur", airport: "Jaipur International Airport (JAI)", hospitals: ["SMS Hospital", "Fortis Jaipur"], localContext: "Jaipur's tourism often requires international repatriation for travelers; we provide 24/7 support at JAI.", caseStudy: { patient: "G. Schmidt", from: "Fortis Jaipur", to: "Berlin, Germany", detail: "Repatriation of a foreign national following a critical road accident." } },
-  { name: "Surat", slug: "surat", airport: "Surat Airport (STV)", hospitals: ["Kiran Hospital", "Sunshine Global"], localContext: "Serving the diamond and textile hub, we specialize in rapid trauma evacuation for industrial accidents.", caseStudy: { patient: "D. Mehta", from: "Kiran Hospital", to: "Mumbai", detail: "Swift medical transfer for advanced cardiac surgery." } },
-  { name: "Kanpur", slug: "kanpur", airport: "Kanpur Airport (KNU)", hospitals: ["Regency Hospital", "Hallett Hospital"], localContext: "Bridging the gap between Kanpur's industrial needs and Lucknow's speciality clusters.", caseStudy: { patient: "S. Agarwal", from: "Regency Hospital", to: "Medanta Lucknow", detail: "Respiratory failure management during a complex ground-to-air transition." } },
-  { name: "Nagpur", slug: "nagpur", airport: "Dr. Babasaheb Ambedkar Airport (NAG)", hospitals: ["Kingsway Hospitals", "Alexis Hospital"], localContext: "As the geographical center of India, Nagpur serves as a strategic refueling and transfer hub for our cross-country flights.", caseStudy: { patient: "F. Robert", from: "Kingsway, Nagpur", to: "Chennai", detail: "Long-distance transfer for advanced spinal rehabilitation." } },
-  { name: "Indore", slug: "indore", airport: "Devi Ahilya Bai Holkar Airport (IDR)", hospitals: ["Medanta Indore", "Bombay Hospital"], localContext: "Providing Indore with direct links to Mumbai and Delhi for high-end critical care.", caseStudy: { patient: "J. Sharma", from: "Medanta Indore", to: "Kokilaben Mumbai", detail: "Pediatric cardiac transfer with full surgical team support." } },
-  { name: "Thane", slug: "thane", airport: "N/A (Uses Mumbai BOM)", hospitals: ["Jupiter Hospital", "Bethany Hospital"], localContext: "Thane's proximity to Mumbai allows for rapid road-to-air transitions via BOM for international repatriation.", caseStudy: { patient: "R. Nair", from: "Jupiter Thane", to: "Singapore", detail: "Multi-organ failure management during international transit." } },
-  { name: "Bhopal", slug: "bhopal", airport: "Raja Bhoj Airport (BHO)", hospitals: ["AIIMS Bhopal", "Bansal Hospital"], localContext: "Strategic medical evacuation services for Central India, connecting Bhopal to global medical networks.", caseStudy: { patient: "S. Varma", from: "Bansal Hospital", to: "Apollo Delhi", detail: "Successful transfer of a patient on high-flow oxygen support." } },
-  { name: "Visakhapatnam", slug: "visakhapatnam", airport: "Visakhapatnam Airport (VTZ)", hospitals: ["Apollo Vizag", "SevenHills Hospital"], localContext: "Specialized in maritime medical evacuations from the Vizag port and naval dockyards.", caseStudy: { patient: "Capt. M. Singh", from: "Vizag Port", to: "Chennai", detail: "Emergency evacuation from a mid-sea vessel followed by air transfer." } },
-  { name: "Chandigarh", slug: "chandigarh", airport: "Chandigarh International Airport (IXC)", hospitals: ["PGI Chandigarh", "Fortis Mohali"], localContext: "Serving Punjab, Haryana, and HP, we provide a lifeline for patients coming down from the hills to IXC.", caseStudy: { patient: "G. Singh", from: "PGI Chandigarh", to: "London, UK", detail: "Air ambulance transfer for a spinal cord injury patient with specialized vacuum mattress." } },
-  { name: "Guwahati", slug: "guwahati", airport: "Lokpriya Gopinath Bordoloi Airport (GAU)", hospitals: ["Apollo Guwahati", "GNRC"], localContext: "The gateway to the Northeast, our Guwahati team handles complex logistics across hilly terrains and flood-prone regions.", caseStudy: { patient: "P. Baruah", from: "Apollo Guwahati", to: "Sir Ganga Ram, Delhi", detail: "Navigating heavy monsoon weather to deliver a critical liver patient safely." } },
-  { name: "Ranchi", slug: "ranchi", airport: "Birsa Munda Airport (IXR)", hospitals: ["Medanta Ranchi", "Raj Hospital"], localContext: "Providing Jharkhand with rapid access to specialized oncology and cardiac centers in metropolitan areas.", caseStudy: { patient: "K. Mahto", from: "Medanta Ranchi", to: "Tata Memorial Mumbai", detail: "Compassionate oncological transfer with full family support." } },
-  { name: "Coimbatore", slug: "coimbatore", airport: "Coimbatore International Airport (CJB)", hospitals: ["KG Hospital", "G.K.N.M."], localContext: "Serving the textile and engineering hub of Tamil Nadu with rapid links to Chennai and Bangalore.", caseStudy: { patient: "S. Ramaswamy", from: "KG Hospital", to: "Apollo Chennai", detail: "Neuro-critical care transfer with continuous brain-activity monitoring." } },
-  { name: "Vijayawada", slug: "vijayawada", airport: "Vijayawada Airport (VGA)", hospitals: ["Manipal Hospital", "Ramesh Hospitals"], localContext: "Key medical hub for Andhra Pradesh, providing direct ICU flights to major metros.", caseStudy: { patient: "Y. Rao", from: "Ramesh Hospital", to: "Yashoda Hyderabad", detail: "Golden-hour cardiac intervention following a swift VGA activation." } },
+  {
+    name: "Pune",
+    slug: "pune",
+    airport: "Pune International Airport (PNQ)",
+    hospitals: ["Jupiter Hospital Baner", "Ruby Hall Clinic", "Sahyadri Super Speciality", "Deenanath Mangeshkar Hospital"],
+    cremationGrounds: ["Vaikunth Crematorium (Navi Peth)", "Koregaon Park Electric Crematorium", "Aundh Crematorium", "Katraj Ghat"],
+    mortuaries: ["Sassoon General Hospital Mortuary", "YCM Hospital Cold Storage Pimpri"],
+    zones: ["Kothrud", "Baner", "Hinjewadi", "Viman Nagar", "Pimpri-Chinchwad", "Kalyani Nagar"],
+    geo: { latitude: 18.5204, longitude: 73.8567 },
+    localContext: "Fast connectivity between Hinjewadi IT park, Kothrud, and Mumbai Pune Expressway with round-the-clock emergency medical evacuations and hearse dispatch across Pune and PCMC.",
+    caseStudy: {
+      patient: "P. Kulkarni",
+      from: "Ruby Hall",
+      to: "Johns Hopkins, USA",
+      detail: "Pediatric ICU transfer requiring specialized neo-natal equipment and pediatric cardiologist."
+    }
+  },
+  {
+    name: "Ahmedabad",
+    slug: "ahmedabad",
+    airport: "Sardar Vallabhbhai Patel International Airport (AMD)",
+    hospitals: ["Zydus Hospital", "KD Hospital SG Highway", "Apollo Hospitals Ahmedabad", "Sterling Hospital"],
+    cremationGrounds: ["VS Hospital Crematorium", "Thaltej Cremation Ground", "Dudheshwar Burning Ghat", "Bodakdev Crematorium"],
+    mortuaries: ["Civil Hospital Asarwa Mortuary", "Sola Civil Cold Storage"],
+    zones: ["SG Highway", "Satellite", "Bodakdev", "Maninagar", "Navrangpura", "Gandhinagar"],
+    geo: { latitude: 23.0225, longitude: 72.5714 },
+    localContext: "Serving Gujarat's commercial and healthcare hub along SG Highway, facilitating air transfers via AMD and rapid interstate mortuary transport to Rajasthan and Maharashtra.",
+    caseStudy: {
+      patient: "M. Patel",
+      from: "Zydus Hospital",
+      to: "London, UK",
+      detail: "Stroke recovery transfer with specialized physiotherapist and neuro-nurse escort."
+    }
+  },
+  {
+    name: "Lucknow",
+    slug: "lucknow",
+    airport: "Chaudhary Charan Singh International Airport (LKO)",
+    hospitals: ["Medanta Lucknow", "Sanjay Gandhi Postgraduate Institute (SGPGI)", "Apollomedics Super Speciality", "KGMU"],
+    cremationGrounds: ["Gulab Ghat Cremation Ground", "Bhainsa Kund (Baikunth Dham)", "Alambagh Electric Crematorium"],
+    mortuaries: ["KGMU Mortuary Center", "Civil Hospital Cold Storage Lucknow"],
+    zones: ["Gomti Nagar", "Hazratganj", "Alambagh", "Indira Nagar", "Ashiyana"],
+    geo: { latitude: 26.8467, longitude: 80.9462 },
+    localContext: "Connecting UP's healthcare heartland with Delhi and Mumbai via green corridors and chartered air ambulance, alongside respectful funeral management at Baikunth Dham.",
+    caseStudy: {
+      patient: "V. Tiwari",
+      from: "Medanta Lucknow",
+      to: "AIIMS Delhi",
+      detail: "Organ transport and recipient transfer coordinated within a 4-hour window."
+    }
+  },
+  {
+    name: "Jaipur",
+    slug: "jaipur",
+    airport: "Jaipur International Airport (JAI)",
+    hospitals: ["Sawai Man Singh (SMS) Hospital", "Fortis Escorts Hospital", "Eternal Heart Care (EHCC)", "Narayana Multispeciality"],
+    cremationGrounds: ["Adarsh Nagar Cremation Ground", "Maharaniyon Ki Chhatriyan Ghat", "Lal Dungri Shamshan", "Vidhyadhar Nagar Ghat"],
+    mortuaries: ["SMS Medical College Mortuary", "Jaiawati Cold Storage"],
+    zones: ["Malviya Nagar", "Vaishali Nagar", "C-Scheme", "Mansarovar", "Tonk Road"],
+    geo: { latitude: 26.9124, longitude: 75.7873 },
+    localContext: "Dedicated air ambulance support for international tourists and local residents, with extensive hearse van routes connecting Delhi, Ajmer, and Shekhawati regions.",
+    caseStudy: {
+      patient: "G. Schmidt",
+      from: "Fortis Jaipur",
+      to: "Berlin, Germany",
+      detail: "Repatriation of a foreign national following a critical road accident."
+    }
+  },
+  {
+    name: "Chandigarh",
+    slug: "chandigarh",
+    airport: "Shaheed Bhagat Singh International Airport (IXC)",
+    hospitals: ["Postgraduate Institute of Medical Education and Research (PGIMER)", "Fortis Hospital Mohali", "Max Super Speciality Mohali"],
+    cremationGrounds: ["Sector 25 Cremation Ground", "Mohali Phase 6 Electric Crematorium", "Panchkula Sector 20 Shamshan Ghat"],
+    mortuaries: ["PGI Chandigarh Mortuary", "GMCH Sector 32 Cold Storage"],
+    zones: ["Sector 17", "Sector 35", "Mohali", "Panchkula", "Zirakpur"],
+    geo: { latitude: 30.7333, longitude: 76.7794 },
+    localContext: "Serving the Tricity, Punjab, Haryana, and Himachal Pradesh with urgent hill-evacuations to PGIMER and high-standard funeral assistance across the region.",
+    caseStudy: {
+      patient: "G. Singh",
+      from: "PGI Chandigarh",
+      to: "London, UK",
+      detail: "Air ambulance transfer for a spinal cord injury patient with specialized vacuum mattress."
+    }
+  },
+  {
+    name: "Patna",
+    slug: "patna",
+    airport: "Jay Prakash Narayan Airport (PAT)",
+    hospitals: ["AIIMS Patna", "Paras HMRI Hospital", "Ruban Memorial Hospital", "IGIMS Patna"],
+    cremationGrounds: ["Bans Ghat Electric Crematorium", "Gulbi Ghat", "Digha Ghat Cremation Ground"],
+    mortuaries: ["PMCH Mortuary Complex", "AIIMS Patna Cold Storage"],
+    zones: ["Kankarbagh", "Boring Road", "Bailey Road", "Patliputra Colony", "Danapur"],
+    geo: { latitude: 25.5941, longitude: 85.1376 },
+    localContext: "Critical aero-medical bridge transporting patients from Bihar to Delhi NCR hospitals, with 24/7 dead body freezer boxes and respectful rituals along the holy Ganges.",
+    caseStudy: {
+      patient: "R. Singh",
+      from: "Paras HMRI, Patna",
+      to: "Medanta, Gurgaon",
+      detail: "Emergency transfer of a patient with 60% burns requiring specialized skin-care protocol during flight."
+    }
+  },
+  {
+    name: "Varanasi",
+    slug: "varanasi",
+    airport: "Lal Bahadur Shastri International Airport (VNS)",
+    hospitals: ["Sir Sunderlal Hospital (BHU)", "Heritage Hospitals Lanka", "Apex Hospital DLW"],
+    cremationGrounds: ["Manikarnika Ghat (Maha Shamshan)", "Harishchandra Ghat Electric Crematorium", "Rajghat"],
+    mortuaries: ["IMS BHU Mortuary", "Pandit Deen Dayal Upadhyay Hospital Mortuary"],
+    zones: ["Godowlia", "Lanka", "Cantonment", "Sigra", "Shivpur"],
+    geo: { latitude: 25.3176, longitude: 82.9739 },
+    localContext: "The global spiritual center for Moksha and Asthi Visarjan. We handle end-to-end holy immersion ceremonies, pandit arrangements, and mortal remains transit to Manikarnika and Harishchandra Ghats.",
+    caseStudy: {
+      patient: "Pandit S. Shastri",
+      from: "BHU Hospital Varanasi",
+      to: "AIIMS New Delhi",
+      detail: "High-priority critical air evacuation with full ventilator and cardiologist escort."
+    }
+  },
+  {
+    name: "Indore",
+    slug: "indore",
+    airport: "Devi Ahilya Bai Holkar Airport (IDR)",
+    hospitals: ["Medanta Super Speciality Indore", "Bombay Hospital Indore", "CHL Hospital", "Apollo Hospitals Vijay Nagar"],
+    cremationGrounds: ["Muktidham Crematorium Rambagh", "Jawahar Nagar Muktidham", "Tilak Nagar Cremation Ground"],
+    mortuaries: ["MY Hospital Mortuary", "District Hospital Indore Cold Storage"],
+    zones: ["Vijay Nagar", "Palasia", "Saket", "Bhawarkua", "Rau"],
+    geo: { latitude: 22.7196, longitude: 75.8577 },
+    localContext: "Madhya Pradesh's commercial hub with active flight routes to Mumbai/Delhi and swift hearse van coordination across Indore, Ujjain, and Dewas.",
+    caseStudy: {
+      patient: "J. Sharma",
+      from: "Medanta Indore",
+      to: "Kokilaben Mumbai",
+      detail: "Pediatric cardiac transfer with full surgical team support."
+    }
+  },
+  {
+    name: "Nagpur",
+    slug: "nagpur",
+    airport: "Dr. Babasaheb Ambedkar International Airport (NAG)",
+    hospitals: ["Kingsway Hospitals", "Alexis Hospital Mankapur", "AIIMS Nagpur", "Care Hospital Ramdaspeth"],
+    cremationGrounds: ["Mokshadham Ghat (Ghat Road)", "Ambazari Ghat", "Manewada Crematorium"],
+    mortuaries: ["Government Medical College (GMC) Mortuary", "IGGMC Mayo Cold Storage"],
+    zones: ["Dharampeth", "Civil Lines", "Ramdaspeth", "Wardha Road", "Sitabuldi"],
+    geo: { latitude: 21.1458, longitude: 79.0882 },
+    localContext: "Geographical center of India serving as a vital medical airlift refueling center and primary emergency transfer node for Vidarbha and MP.",
+    caseStudy: {
+      patient: "F. Robert",
+      from: "Kingsway, Nagpur",
+      to: "Chennai",
+      detail: "Long-distance transfer for advanced spinal rehabilitation."
+    }
+  },
+  {
+    name: "Surat",
+    slug: "surat",
+    airport: "Surat Airport (STV)",
+    hospitals: ["Kiran Multispeciality Hospital", "Sunshine Global Hospital", "Mahavir Hospital"],
+    cremationGrounds: ["Ramnath Ghela Shamshan Ghat", "Kurukshetra Crematorium Jahangirpura", "Ashwinikumar Shamshan"],
+    mortuaries: ["New Civil Hospital Mortuary Surat", "SMIMER Hospital Cold Storage"],
+    zones: ["Athwa Lines", "Varachha", "Adajan", "Vesu", "Piplod"],
+    geo: { latitude: 21.1702, longitude: 72.8311 },
+    localContext: "Fast response for South Gujarat industrial belt with rapid road and air medical evacuations to Mumbai super-speciality hospitals.",
+    caseStudy: {
+      patient: "D. Mehta",
+      from: "Kiran Hospital",
+      to: "Mumbai",
+      detail: "Swift medical transfer for advanced cardiac surgery."
+    }
+  },
+  {
+    name: "Bhopal",
+    slug: "bhopal",
+    airport: "Raja Bhoj Airport (BHO)",
+    hospitals: ["AIIMS Bhopal", "Bansal Hospital", "Chirayu Medical College", "Hamidia Hospital"],
+    cremationGrounds: ["Bhadbhada Vishram Ghat", "Subhash Nagar Vishram Ghat", "Bairagarh Muktidham"],
+    mortuaries: ["Hamidia Hospital Mortuary", "AIIMS Bhopal Cold Storage"],
+    zones: ["Arera Colony", "MP Nagar", "Shahpura", "Kolar Road", "Hoshangabad Road"],
+    geo: { latitude: 23.2599, longitude: 77.4126 },
+    localContext: "Central India medical logistics providing 24/7 ICU air charters and compassionate hearse and mortuary services connecting all MP districts.",
+    caseStudy: {
+      patient: "S. Varma",
+      from: "Bansal Hospital",
+      to: "Apollo Delhi",
+      detail: "Successful transfer of a patient on high-flow oxygen support."
+    }
+  },
+  {
+    name: "Visakhapatnam",
+    slug: "visakhapatnam",
+    airport: "Visakhapatnam International Airport (VTZ)",
+    hospitals: ["Apollo Hospitals Health City", "SevenHills Hospital", "Care Hospitals Ramnagar"],
+    cremationGrounds: ["Gnanapuram Hindu Cremation Ground", "Chavulamadum Electric Crematorium", "Kailasapuram Ghat"],
+    mortuaries: ["King George Hospital (KGH) Mortuary", "VIMS Cold Storage"],
+    zones: ["Siripuram", "MVP Colony", "Gajuwaka", "Madhurawada", "Maharanipeta"],
+    geo: { latitude: 17.6868, longitude: 83.2185 },
+    localContext: "Specialized in maritime offshore medical transfers, port dockyard evacuations, and comprehensive mortuary transport across Coastal Andhra.",
+    caseStudy: {
+      patient: "Capt. M. Singh",
+      from: "Vizag Port",
+      to: "Chennai",
+      detail: "Emergency evacuation from a mid-sea vessel followed by air transfer."
+    }
+  },
+  {
+    name: "Guwahati",
+    slug: "guwahati",
+    airport: "Lokpriya Gopinath Bordoloi International Airport (GAU)",
+    hospitals: ["Apollo Hospitals Guwahati", "GNRC Medical Dispur", "Narayana Superspeciality", "Down Town Hospital"],
+    cremationGrounds: ["Navagraha Shamshan Ghat", "Bhootnath Shamshan Ghat", "Ulubari Electric Crematorium"],
+    mortuaries: ["Gauhati Medical College (GMCH) Mortuary", "Narayana Cold Storage"],
+    zones: ["Dispur", "GS Road", "Ulubari", "Six Mile", "Paltan Bazaar"],
+    geo: { latitude: 26.1445, longitude: 91.7362 },
+    localContext: "Gateway for Northeast India, overcoming tough regional terrain to connect Assam and sister states to premier hospitals in Delhi and Kolkata.",
+    caseStudy: {
+      patient: "P. Baruah",
+      from: "Apollo Guwahati",
+      to: "Sir Ganga Ram, Delhi",
+      detail: "Navigating heavy monsoon weather to deliver a critical liver patient safely."
+    }
+  },
+  {
+    name: "Ranchi",
+    slug: "ranchi",
+    airport: "Birsa Munda Airport (IXR)",
+    hospitals: ["Medanta Abdur Razzaque Ansari Memorial", "Raj Hospitals", "RIMS Ranchi"],
+    cremationGrounds: ["Muktidham Harmu", "Namkum Crematorium", "Swargdham Ghat"],
+    mortuaries: ["RIMS Mortuary Complex", "Sadar Hospital Cold Storage"],
+    zones: ["Kanke Road", "Harmu", "Doranda", "Bariatu", "Lalpur"],
+    geo: { latitude: 23.3441, longitude: 85.3096 },
+    localContext: "Rapid medical repatriation and specialized mortuary transport linking Jharkhand patients with oncology and neuro centres in Delhi and Kolkata.",
+    caseStudy: {
+      patient: "K. Mahto",
+      from: "Medanta Ranchi",
+      to: "Tata Memorial Mumbai",
+      detail: "Compassionate oncological transfer with full family support."
+    }
+  },
+  {
+    name: "Coimbatore",
+    slug: "coimbatore",
+    airport: "Coimbatore International Airport (CJB)",
+    hospitals: ["G.Kuppuswamy Naidu Memorial (GKNM)", "KG Hospital", "Kovai Medical Center (KMCH)", "PSG Hospitals"],
+    cremationGrounds: ["Thudiyalur Electric Crematorium", "Pappanaickenpalayam Crematorium", "Nanjundapuram Ghat"],
+    mortuaries: ["Coimbatore Medical College Hospital (CMCH) Mortuary", "KMCH Cold Storage"],
+    zones: ["RS Puram", "Peelamedu", "Gandhipuram", "Saibaba Colony", "Saravanampatti"],
+    geo: { latitude: 11.0168, longitude: 76.9558 },
+    localContext: "Serving Western Tamil Nadu and Kerala border with high-reliability aero-medical evacuations and hearse van connectivity to Chennai and Bangalore.",
+    caseStudy: {
+      patient: "S. Ramaswamy",
+      from: "KG Hospital",
+      to: "Apollo Chennai",
+      detail: "Neuro-critical care transfer with continuous brain-activity monitoring."
+    }
+  },
+  {
+    name: "Vijayawada",
+    slug: "vijayawada",
+    airport: "Vijayawada International Airport (VGA)",
+    hospitals: ["Manipal Hospital Tadepalli", "Ramesh Hospitals", "Ayush Hospitals", "Andhra Hospitals"],
+    cremationGrounds: ["Swargapuri Electric Crematorium (Bhavanipuram)", "Krishnalanka Hindu Cremation Ground", "Gollapudi Ghat"],
+    mortuaries: ["New Government General Hospital (GGH) Mortuary", "Manipal Cold Storage"],
+    zones: ["MG Road", "Benz Circle", "Bhavanipuram", "Governorpet", "Tadepalli"],
+    geo: { latitude: 16.5062, longitude: 80.6480 },
+    localContext: "Heart of Andhra Pradesh healthcare, facilitating instant ICU air transfers to Hyderabad and Chennai, plus complete funeral samagri and hearse coordination.",
+    caseStudy: {
+      patient: "Y. Rao",
+      from: "Ramesh Hospital",
+      to: "Yashoda Hyderabad",
+      detail: "Golden-hour cardiac intervention following a swift VGA activation."
+    }
+  },
+  {
+    name: "Haridwar",
+    slug: "haridwar",
+    airport: "Dehradun Jolly Grant Airport (DED)",
+    hospitals: ["Metro Hospital Haridwar", "Ramakrishna Mission Sevashrama", "AIIMS Rishikesh"],
+    cremationGrounds: ["Kankhal Shamshan Ghat", "Har Ki Pauri Ghat", "Chandi Ghat Crematorium"],
+    mortuaries: ["District Hospital Haridwar Mortuary", "AIIMS Rishikesh Cold Storage"],
+    zones: ["Har Ki Pauri", "Kankhal", "Jwalapur", "Ranipur", "Shivalik Nagar"],
+    geo: { latitude: 29.9457, longitude: 78.1642 },
+    localContext: "Sacred pilgrimage center for Antim Sanskar and Asthi Visarjan on Mother Ganga. We provide verified Vedic pandits, ritual samagri, and transportation directly to Har Ki Pauri and Kankhal Ghats.",
+    caseStudy: {
+      patient: "Emergency Transfer",
+      from: "Haridwar Local Hospital",
+      to: "AIIMS Rishikesh",
+      detail: "Rapid ICU ground ambulance transfer via dedicated mountain-corridor protocol."
+    }
+  }
 ];
 
 export const getCityData = (slug) => {
-  const city = cities.find(c => c.slug === slug);
+  const city = cities.find((c) => c.slug === slug);
   if (city) return city;
-  
-  // Generic fallback generator for cities not in the detailed list
-  const name = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+
+  // Graceful fallback for any additional query
+  const name = slug
+    .split("-")
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(" ");
+
   return {
     name,
     slug,
     airport: `${name} Airport`,
-    hospitals: [`Major Hospitals in ${name}`, `Apollo ${name}`, `Fortis ${name}`],
-    localContext: `In ${name}, we prioritize rapid medical response by coordinating with local authorities to ensure a smooth transition from city hospitals to the nearest airstrip. Our team manages all paperwork and ground logistics in ${name}.`,
+    hospitals: [`Major Multispeciality Hospitals in ${name}`, `Apollo ${name}`, `Fortis ${name}`],
+    cremationGrounds: [`Primary Cremation Ground in ${name}`, `Municipal Electric Crematorium ${name}`],
+    mortuaries: [`Civil Hospital Mortuary ${name}`],
+    zones: [`Central ${name}`, `North ${name}`, `South ${name}`],
+    geo: { latitude: 20.5937, longitude: 78.9629 },
+    localContext: `In ${name}, we prioritize rapid medical response and dignified funeral logistics. Our localized fleet ensures 15-30 minute dispatch across all city sectors and direct airport/railway transfers.`,
     caseStudy: {
       patient: "Emergency Case",
       from: `Hospital in ${name}`,
       to: "Specialised Medical Center",
-      detail: `Conducted a bed-to-bed transfer for a critical patient in ${name} requiring advanced respiratory support.`
+      detail: `Conducted safe bedside-to-bedside transfer in ${name} with complete critical care monitoring.`
     }
   };
 };

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.bhartiyanairambulanceservices.in/
+Host: https://bharatairambulance.com/
 
 # Sitemaps
-Sitemap: https://www.bhartiyanairambulanceservices.in/sitemap.xml
+Sitemap: https://bharatairambulance.com/sitemap.xml

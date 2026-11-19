@@ -55,13 +55,13 @@ const Navbar = () => {
           >
             Our Work
           </Link>
-          {/* <Link
-            href="/news"
+          <Link
+            href="/News"
             className="text-medical-dark font-medium hover:text-medical-blue transition-colors"
             onClick={handleLinkClick}
           >
-            News
-          </Link> */}
+            Emergency Guides
+          </Link>
           <Link
             href="/corporate"
             className="text-medical-dark font-medium hover:text-medical-blue transition-colors"
@@ -194,11 +194,11 @@ const Navbar = () => {
                 Our Work
               </Link>
               <Link
-                href="/news"
+                href="/News"
                 className="text-lg font-semibold py-2 border-b border-gray-50"
                 onClick={handleLinkClick}
               >
-                News
+                Emergency Guides
               </Link>
               <Link
                 href="/corporate"
