@@ -30,6 +30,23 @@ export const metadata = {
   alternates: {
     canonical: "https://bhartiyanairambulanceservices.in",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bharat Air Ambulance & Emergency Mortuary Logistics",
+    description: "24/7 Global Air Ambulance, Dead Body Freezer Box on Rent, Hearse Van, and International Repatriation.",
+    images: ["/images/slide1.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const globalSchema = {
