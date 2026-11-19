@@ -15,7 +15,7 @@ export const metadata = {
   description:
     "Authoritative guides on domestic dead body transport by flight, international mortal remains repatriation, electric cremation grounds in Delhi NCR, and freezer box rentals.",
   alternates: {
-    canonical: "https://bharatairambulance.com/News",
+    canonical: "https://bhartiyanairambulanceservices.in/News",
   },
 };
 

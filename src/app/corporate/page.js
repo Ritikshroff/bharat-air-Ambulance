@@ -20,7 +20,7 @@ function Corporate() {
                 />
                 <meta name="robots" content="index, follow" />
                 <meta name="author" content="Bharat Air Ambulance and Funeral Services" />
-                <link rel="canonical" href="https://www.bhartiyanairambulanceservices.in/corporate" />
+                <link rel="canonical" href="https://bhartiyanairambulanceservices.in/corporate" />
             </Head>
 
             {/* Coming Soon Section */}

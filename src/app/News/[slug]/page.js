@@ -29,12 +29,12 @@ export async function generateMetadata({ params }) {
     title: `${guide.metaTitle} | Bharat Emergency Logistics`,
     description: guide.metaDescription,
     alternates: {
-      canonical: `https://bharatairambulance.com/News/${guide.slug}`,
+      canonical: `https://bhartiyanairambulanceservices.in/News/${guide.slug}`,
     },
     openGraph: {
       title: guide.title,
       description: guide.metaDescription,
-      url: `https://bharatairambulance.com/News/${guide.slug}`,
+      url: `https://bhartiyanairambulanceservices.in/News/${guide.slug}`,
       type: "article",
       publishedTime: guide.publishedDate,
       authors: [guide.author],
@@ -59,19 +59,19 @@ export default function GuideDetailPage({ params }) {
     author: {
       "@type": "Organization",
       name: guide.author,
-      url: "https://bharatairambulance.com",
+      url: "https://bhartiyanairambulanceservices.in",
     },
     publisher: {
       "@type": "Organization",
       name: "Bharat Air Ambulance and Funeral Logistics",
       logo: {
         "@type": "ImageObject",
-        url: "https://bharatairambulance.com/images/slide1.jpg",
+        url: "https://bhartiyanairambulanceservices.in/images/slide1.jpg",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://bharatairambulance.com/News/${guide.slug}`,
+      "@id": `https://bhartiyanairambulanceservices.in/News/${guide.slug}`,
     },
   };
 

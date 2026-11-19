@@ -3,7 +3,7 @@ import { cities } from "@/data/cities";
 import { guidesData } from "@/data/guidesData";
 
 export default function sitemap() {
-  const baseUrl = "https://bharatairambulance.com";
+  const baseUrl = "https://bhartiyanairambulanceservices.in";
   const currentDate = new Date().toISOString();
 
   // Static core pages

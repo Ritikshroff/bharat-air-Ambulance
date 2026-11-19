@@ -15,12 +15,12 @@ export async function generateMetadata({ params }) {
     title: `${service.title} | Bharat Emergency Logistics`,
     description: `${service.shortDesc} 24/7 emergency coordination across India with direct hospital and airport access. Call +91 88823 83902.`,
     alternates: {
-      canonical: `https://bharatairambulance.com/services/${service.id}`,
+      canonical: `https://bhartiyanairambulanceservices.in/services/${service.id}`,
     },
     openGraph: {
       title: `${service.title} | 24/7 Pan-India Service`,
       description: service.shortDesc,
-      url: `https://bharatairambulance.com/services/${service.id}`,
+      url: `https://bhartiyanairambulanceservices.in/services/${service.id}`,
       images: [{ url: service.imgSrc || "/images/slide1.jpg" }],
     },
   };
@@ -47,14 +47,14 @@ export default function Page({ params }) {
     "@graph": [
       {
         "@type": "Service",
-        "@id": `https://bharatairambulance.com/services/${service.id}#service`,
+        "@id": `https://bhartiyanairambulanceservices.in/services/${service.id}#service`,
         name: service.title,
         serviceType: service.name,
         description: service.fullDesc,
         provider: {
           "@type": "Organization",
           name: "Bharat Air Ambulance and Funeral Logistics",
-          url: "https://bharatairambulance.com",
+          url: "https://bhartiyanairambulanceservices.in",
           telephone: "+918882383902",
         },
         areaServed: {
@@ -75,25 +75,25 @@ export default function Page({ params }) {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": `https://bharatairambulance.com/services/${service.id}#breadcrumb`,
+        "@id": `https://bhartiyanairambulanceservices.in/services/${service.id}#breadcrumb`,
         itemListElement: [
           {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://bharatairambulance.com",
+            item: "https://bhartiyanairambulanceservices.in",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Services",
-            item: "https://bharatairambulance.com/services",
+            item: "https://bhartiyanairambulanceservices.in/services",
           },
           {
             "@type": "ListItem",
             position: 3,
             name: service.name,
-            item: `https://bharatairambulance.com/services/${service.id}`,
+            item: `https://bhartiyanairambulanceservices.in/services/${service.id}`,
           },
         ],
       },

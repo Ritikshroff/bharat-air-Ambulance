@@ -12,7 +12,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import EmergencyStickyBar from "@/components/EmergencyStickyBar";
 
 export const metadata = {
-  metadataBase: new URL("https://bharatairambulance.com"),
+  metadataBase: new URL("https://bhartiyanairambulanceservices.in"),
   title:
     "Bharat Air Ambulance | Global Medical Repatriation & Funeral Services India",
   description:
@@ -23,12 +23,12 @@ export const metadata = {
     title: "Bharat Air Ambulance | 24/7 Global Repatriation & Emergency Logistics",
     description:
       "24/7 Global Medical Transportation & Funeral Logistics. Bridging India with the World with speed, dignity, and care.",
-    url: "https://bharatairambulance.com",
+    url: "https://bhartiyanairambulanceservices.in",
     type: "website",
     images: [{ url: "/images/slide1.jpg" }],
   },
   alternates: {
-    canonical: "https://bharatairambulance.com",
+    canonical: "https://bhartiyanairambulanceservices.in",
   },
 };
 
@@ -37,12 +37,12 @@ const globalSchema = {
   "@graph": [
     {
       "@type": "MedicalOrganization",
-      "@id": "https://bharatairambulance.com/#organization",
+      "@id": "https://bhartiyanairambulanceservices.in/#organization",
       name: "Bharat Air Ambulance & Funeral Logistics",
-      url: "https://bharatairambulance.com",
-      logo: "https://bharatairambulance.com/images/slide1.jpg",
+      url: "https://bhartiyanairambulanceservices.in",
+      logo: "https://bhartiyanairambulanceservices.in/images/slide1.jpg",
       telephone: "+918882383902",
-      email: "info@bharatairambulance.com",
+      email: "info@bhartiyanairambulanceservices.in",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Mahipalpur Extension",
@@ -54,7 +54,7 @@ const globalSchema = {
     },
     {
       "@type": "EmergencyService",
-      "@id": "https://bharatairambulance.com/#emergency-service",
+      "@id": "https://bhartiyanairambulanceservices.in/#emergency-service",
       name: "Bharat 24/7 Emergency Medical Flights & Mortuary Transport",
       telephone: "+918882383902",
       priceRange: "₹₹",
@@ -77,11 +77,11 @@ const globalSchema = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://bharatairambulance.com/#website",
-      url: "https://bharatairambulance.com",
+      "@id": "https://bhartiyanairambulanceservices.in/#website",
+      url: "https://bhartiyanairambulanceservices.in",
       name: "Bharat Air Ambulance",
       publisher: {
-        "@id": "https://bharatairambulance.com/#organization",
+        "@id": "https://bhartiyanairambulanceservices.in/#organization",
       },
     },
   ],

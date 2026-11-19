@@ -51,12 +51,12 @@ export async function generateMetadata({ params }) {
     description: `Best ${service.name} in ${cityName}. 24/7 emergency response, verified fleet, transparent pricing, hospital & cremation ground coordination. Call +91 88823 83902.`,
     keywords: `${service.name.toLowerCase()} in ${cityName}, ${service.name.toLowerCase()} near me, 24/7 ${cityName} ${service.name.toLowerCase()}, emergency ${service.name.toLowerCase()} contact ${cityName}`,
     alternates: {
-      canonical: `https://bharatairambulance.com/${fullSlug}`,
+      canonical: `https://bhartiyanairambulanceservices.in/${fullSlug}`,
     },
     openGraph: {
       title: `${service.name} in ${cityName} | Bharat Emergency Logistics`,
       description: `Immediate 24/7 ${service.name} in ${cityName}. Fast dispatch within 15-30 minutes. Contact emergency team now.`,
-      url: `https://bharatairambulance.com/${fullSlug}`,
+      url: `https://bhartiyanairambulanceservices.in/${fullSlug}`,
       type: "website",
       images: [{ url: service.imgSrc || "/images/slide1.jpg" }],
     },
@@ -87,10 +87,10 @@ export default function DynamicProgrammaticLandingPage({ params }) {
     "@graph": [
       {
         "@type": "EmergencyService",
-        "@id": `https://bharatairambulance.com/${fullSlug}#service`,
+        "@id": `https://bhartiyanairambulanceservices.in/${fullSlug}#service`,
         name: `Bharat ${service.name} in ${cityName}`,
         description: `24/7 Emergency ${service.name} and logistics support in ${cityName} with rapid dispatch and transparent assistance.`,
-        url: `https://bharatairambulance.com/${fullSlug}`,
+        url: `https://bhartiyanairambulanceservices.in/${fullSlug}`,
         telephone: "+918882383902",
         priceRange: "₹₹",
         openingHoursSpecification: [
@@ -127,13 +127,13 @@ export default function DynamicProgrammaticLandingPage({ params }) {
         provider: {
           "@type": "Organization",
           name: "Bharat Air Ambulance and Funeral Logistics",
-          url: "https://bharatairambulance.com",
+          url: "https://bhartiyanairambulanceservices.in",
           telephone: "+918882383902",
         },
       },
       {
         "@type": "FAQPage",
-        "@id": `https://bharatairambulance.com/${fullSlug}#faq`,
+        "@id": `https://bhartiyanairambulanceservices.in/${fullSlug}#faq`,
         mainEntity: faqs.map((f) => ({
           "@type": "Question",
           name: f.q,
@@ -145,31 +145,31 @@ export default function DynamicProgrammaticLandingPage({ params }) {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": `https://bharatairambulance.com/${fullSlug}#breadcrumb`,
+        "@id": `https://bhartiyanairambulanceservices.in/${fullSlug}#breadcrumb`,
         itemListElement: [
           {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://bharatairambulance.com",
+            item: "https://bhartiyanairambulanceservices.in",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Services",
-            item: "https://bharatairambulance.com/services",
+            item: "https://bhartiyanairambulanceservices.in/services",
           },
           {
             "@type": "ListItem",
             position: 3,
             name: service.name,
-            item: `https://bharatairambulance.com/services/${service.id}`,
+            item: `https://bhartiyanairambulanceservices.in/services/${service.id}`,
           },
           {
             "@type": "ListItem",
             position: 4,
             name: `${service.name} in ${cityName}`,
-            item: `https://bharatairambulance.com/${fullSlug}`,
+            item: `https://bhartiyanairambulanceservices.in/${fullSlug}`,
           },
         ],
       },

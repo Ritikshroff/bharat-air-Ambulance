@@ -155,7 +155,7 @@ const Footer = () => {
                 <FaEnvelope className="text-medical-red mt-1" />
                 <div>
                   <p className="text-white font-bold">Email Support</p>
-                  <p>info@bharatairambulance.com</p>
+                  <p>info@bhartiyanairambulanceservices.in</p>
                 </div>
               </div>
               <div className="flex gap-4">
