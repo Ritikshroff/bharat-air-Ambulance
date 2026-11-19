@@ -18,6 +18,8 @@ import {
   FaStar,
   FaHospital,
   FaFire,
+  FaLanguage,
+  FaInfoCircle,
 } from "react-icons/fa";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -47,9 +49,9 @@ export async function generateMetadata({ params }) {
   const cityName = cityData.name;
 
   return {
-    title: `${service.name} in ${cityName} | 24/7 Verified Support & Fast Dispatch`,
-    description: `Best ${service.name} in ${cityName}. 24/7 emergency response, verified fleet, transparent pricing, hospital & cremation ground coordination. Call +91 88823 83902.`,
-    keywords: `${service.name.toLowerCase()} in ${cityName}, ${service.name.toLowerCase()} near me, 24/7 ${cityName} ${service.name.toLowerCase()}, emergency ${service.name.toLowerCase()} contact ${cityName}`,
+    title: `${service.name} in ${cityName} (${service.hindiName?.split(" ")[0] || ""}) | 24/7 Verified Support`,
+    description: `Best 24/7 ${service.name} in ${cityName}. Fast dispatch across ${cityData.zones?.slice(0, 2).join(", ") || cityName}, verified fleet, transparent pricing. Call +91 88823 83902.`,
+    keywords: `${service.name.toLowerCase()} in ${cityName}, ${service.name.toLowerCase()} near me, ${service.alternateNames ? service.alternateNames.join(", ") : ""}, 24/7 ${cityName} ${service.name.toLowerCase()}, emergency ${service.name.toLowerCase()} contact ${cityName}`,
     alternates: {
       canonical: `https://bhartiyanairambulanceservices.in/${fullSlug}`,
     },
@@ -81,7 +83,7 @@ export default function DynamicProgrammaticLandingPage({ params }) {
   const cityName = cityData.name;
   const faqs = getServiceFaqs(service.id, cityData, cityName);
 
-  // Google Schema.org Structured Data: EmergencyService + FAQPage + BreadcrumbList
+  // Google Schema.org Structured Data: EmergencyService + FAQPage + BreadcrumbList + Speakable (AEO & GEO optimized)
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -89,7 +91,11 @@ export default function DynamicProgrammaticLandingPage({ params }) {
         "@type": "EmergencyService",
         "@id": `https://bhartiyanairambulanceservices.in/${fullSlug}#service`,
         name: `Bharat ${service.name} in ${cityName}`,
-        description: `24/7 Emergency ${service.name} and logistics support in ${cityName} with rapid dispatch and transparent assistance.`,
+        alternateName: [
+          service.hindiName || service.name,
+          ...(service.alternateNames || []),
+        ],
+        description: `24/7 Emergency ${service.name} (${service.hindiName || ""}) in ${cityName}. 15-30 minute dispatch, transparent pricing, hospital & cremation ground coordination.`,
         url: `https://bhartiyanairambulanceservices.in/${fullSlug}`,
         telephone: "+918882383902",
         priceRange: "₹₹",
@@ -173,6 +179,20 @@ export default function DynamicProgrammaticLandingPage({ params }) {
           },
         ],
       },
+      {
+        "@type": "WebPage",
+        "@id": `https://bhartiyanairambulanceservices.in/${fullSlug}#webpage`,
+        url: `https://bhartiyanairambulanceservices.in/${fullSlug}`,
+        name: `${service.name} in ${cityName}`,
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: [
+            ".aeo-quick-answer",
+            ".aeo-faq-question",
+            ".aeo-faq-answer",
+          ],
+        },
+      },
     ],
   };
 
@@ -217,10 +237,18 @@ export default function DynamicProgrammaticLandingPage({ params }) {
 
           <div className="flex flex-col lg:flex-row items-center gap-10 md:gap-16">
             <div className="lg:w-3/5">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-medical-red rounded-full text-white text-[10px] md:text-xs font-black tracking-widest uppercase mb-6 animate-pulse shadow-lg shadow-medical-red/40">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-medical-red rounded-full text-white text-[10px] md:text-xs font-black tracking-widest uppercase mb-4 animate-pulse shadow-lg shadow-medical-red/40">
                 <span className="w-2 h-2 bg-white rounded-full animate-ping"></span>
                 24/7 Verified Dispatch &bull; 15-30 Min Arrival
               </div>
+
+              {/* Vernacular Label Badge */}
+              {service.hindiName && (
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 rounded-lg text-white/90 text-xs font-bold mb-4 ml-0 lg:ml-2">
+                  <FaLanguage className="text-medical-red-light" />
+                  {service.hindiName}
+                </div>
+              )}
 
               <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
                 {service.name} <br className="hidden sm:block" />
@@ -298,6 +326,40 @@ export default function DynamicProgrammaticLandingPage({ params }) {
                     {cityData.zones ? cityData.zones.slice(0, 2).join(", ") : cityName}
                   </span>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AEO & GEO Direct Answer Summary Block (AI Overviews & Perplexity Target) */}
+      <section className="bg-medical-grey py-8 border-b border-gray-200">
+        <div className="container mx-auto px-5 max-w-5xl">
+          <div className="bg-white p-6 md:p-8 rounded-3xl border border-medical-blue/10 shadow-md">
+            <div className="flex items-center gap-3 text-medical-blue mb-3 font-black text-sm uppercase tracking-wider">
+              <FaInfoCircle className="text-lg" />
+              <span>Direct Answer &bull; {service.name} in {cityName}</span>
+            </div>
+            <p className="aeo-quick-answer text-base md:text-lg font-medium text-gray-800 leading-relaxed mb-6">
+              {service.quickAnswer || service.shortDesc}
+            </p>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs font-bold pt-4 border-t border-gray-100">
+              <div className="p-3 bg-medical-grey rounded-xl">
+                <span className="text-gray-400 block mb-1 uppercase text-[10px]">Response Time</span>
+                <span className="text-medical-dark text-sm">15-30 Minutes</span>
+              </div>
+              <div className="p-3 bg-medical-grey rounded-xl">
+                <span className="text-gray-400 block mb-1 uppercase text-[10px]">Vernacular Term</span>
+                <span className="text-medical-dark text-sm truncate block">{service.hindiName?.split("(")[0] || service.name}</span>
+              </div>
+              <div className="p-3 bg-medical-grey rounded-xl">
+                <span className="text-gray-400 block mb-1 uppercase text-[10px]">Key Hospital</span>
+                <span className="text-medical-dark text-sm truncate block">{cityData.hospitals[0]}</span>
+              </div>
+              <div className="p-3 bg-medical-grey rounded-xl">
+                <span className="text-gray-400 block mb-1 uppercase text-[10px]">Emergency Line</span>
+                <span className="text-medical-red text-sm font-black">+91 88823 83902</span>
               </div>
             </div>
           </div>
@@ -474,7 +536,7 @@ export default function DynamicProgrammaticLandingPage({ params }) {
         </section>
       )}
 
-      {/* Local FAQs Section (Google FAQ Schema Powered) */}
+      {/* Local FAQs Section (Google FAQ Schema Powered + Speakable) */}
       {faqs.length > 0 && (
         <section className="py-16 md:py-24 bg-medical-grey">
           <div className="container mx-auto px-5 max-w-4xl">
@@ -493,13 +555,13 @@ export default function DynamicProgrammaticLandingPage({ params }) {
                   key={idx}
                   className="bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm"
                 >
-                  <h3 className="text-lg md:text-xl font-black text-medical-dark mb-3 flex items-start gap-3">
+                  <h3 className="aeo-faq-question text-lg md:text-xl font-black text-medical-dark mb-3 flex items-start gap-3">
                     <span className="bg-medical-blue text-white w-7 h-7 rounded-lg flex items-center justify-center shrink-0 mt-0.5 text-xs">
                       ?
                     </span>
                     {faq.q}
                   </h3>
-                  <p className="text-gray-600 text-sm md:text-base leading-relaxed pl-10">
+                  <p className="aeo-faq-answer text-gray-600 text-sm md:text-base leading-relaxed pl-10">
                     {faq.a}
                   </p>
                 </div>
@@ -539,12 +601,12 @@ export default function DynamicProgrammaticLandingPage({ params }) {
           {/* Same service in other major cities */}
           <div className="pt-10 border-t border-white/10">
             <h3 className="text-xl md:text-2xl font-black mb-6 text-center md:text-left">
-              {service.name} in Other Major Indian Cities
+              {service.name} in Other Major Indian Cities & Neighborhoods
             </h3>
             <div className="flex flex-wrap gap-3 justify-center md:justify-start">
               {cities
                 .filter((c) => c.slug !== citySlug)
-                .slice(0, 15)
+                .slice(0, 20)
                 .map((c) => (
                   <Link
                     key={c.slug}

@@ -251,6 +251,26 @@ const Footer = () => {
             </div>
           </div>
 
+          <div>
+            <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">
+              Delhi NCR & Mumbai Micro-Neighborhood Dispatch Hubs
+            </h4>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-2 gap-x-4 text-xs text-gray-400">
+              <a href="/dead-body-freezer-box-in-noida" className="hover:text-medical-red transition-colors">Freezer Box Noida</a>
+              <a href="/hearse-van-service-in-noida" className="hover:text-medical-red transition-colors">Hearse Van Noida</a>
+              <a href="/dead-body-freezer-box-in-gurgaon" className="hover:text-medical-red transition-colors">Freezer Box Gurgaon</a>
+              <a href="/hearse-van-service-in-gurgaon" className="hover:text-medical-red transition-colors">Hearse Van Gurgaon</a>
+              <a href="/dead-body-freezer-box-in-faridabad" className="hover:text-medical-red transition-colors">Freezer Box Faridabad</a>
+              <a href="/dead-body-freezer-box-in-ghaziabad" className="hover:text-medical-red transition-colors">Freezer Box Ghaziabad</a>
+              <a href="/dead-body-freezer-box-in-dwarka" className="hover:text-medical-red transition-colors">Freezer Box Dwarka</a>
+              <a href="/dead-body-freezer-box-in-south-delhi" className="hover:text-medical-red transition-colors">Freezer Box South Delhi</a>
+              <a href="/hearse-van-service-in-navi-mumbai" className="hover:text-medical-red transition-colors">Hearse Van Navi Mumbai</a>
+              <a href="/hearse-van-service-in-thane" className="hover:text-medical-red transition-colors">Hearse Van Thane</a>
+              <a href="/dead-body-freezer-box-in-andheri" className="hover:text-medical-red transition-colors">Freezer Box Andheri</a>
+              <a href="/dead-body-freezer-box-in-whitefield" className="hover:text-medical-red transition-colors">Freezer Box Whitefield</a>
+            </div>
+          </div>
+
           <p className="mt-4 text-[10px] text-gray-500">
             * 24/7 dedicated command center coordination serving all 50+ major cities and towns across India.
           </p>

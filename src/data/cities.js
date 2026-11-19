@@ -389,6 +389,295 @@ export const cities = [
       to: "AIIMS Rishikesh",
       detail: "Rapid ICU ground ambulance transfer via dedicated mountain-corridor protocol."
     }
+  },
+  {
+    name: "Noida",
+    slug: "noida",
+    airport: "Indira Gandhi International Airport (DEL) / Jewar Airport (DXN)",
+    hospitals: ["Fortis Hospital Sector 62", "Jaypee Hospital Sector 128", "Kailash Hospital Sector 27", "Yatharth Super Speciality"],
+    cremationGrounds: ["Sector 94 Antim Niwas Crematorium", "Sector 151 Cremation Ground", "Hindon Crematorium"],
+    mortuaries: ["District Hospital Sector 39 Mortuary", "Jaypee Cold Storage"],
+    zones: ["Sector 62", "Sector 18", "Sector 128", "Sector 50", "Noida Expressway", "Sector 76"],
+    geo: { latitude: 28.5355, longitude: 77.3910 },
+    localContext: "Serving Gautam Buddha Nagar and Noida Expressway with 15-minute dispatch for dead body freezer boxes, hearse vans to Sector 94 Antim Niwas, and rapid ICU transfers via DND and Yamuna Expressway.",
+    caseStudy: {
+      patient: "Mr. V. Saxena",
+      from: "Jaypee Hospital, Sector 128",
+      to: "Safdarjung Hospital, Delhi",
+      detail: "Green-corridor ICU ground transfer executed in under 22 minutes during morning peak traffic."
+    }
+  },
+  {
+    name: "Gurgaon",
+    slug: "gurgaon",
+    airport: "Indira Gandhi International Airport (DEL)",
+    hospitals: ["Medanta The Medicity", "Fortis Memorial Research Institute (FMRI)", "Artemis Hospital Sector 51", "Max Hospital Sushant Lok"],
+    cremationGrounds: ["Madanpuri Shamshan Ghat", "Sukhrali Cremation Ground", "Sector 32 Crematorium", "Atul Kataria Chowk Ghat"],
+    mortuaries: ["Civil Hospital Sector 10 Mortuary", "Medanta Cold Storage"],
+    zones: ["DLF Phase 1-5", "Golf Course Road", "Cyber City", "Sohna Road", "Sushant Lok", "Sector 56"],
+    geo: { latitude: 28.4595, longitude: 77.0266 },
+    localContext: "Corporate & healthcare capital of Haryana. Direct standby ambulances at Medanta & Fortis for IGI Airport flights, alongside 24/7 freezer box delivery across DLF, Golf Course Road, and Cyber City.",
+    caseStudy: {
+      patient: "Corporate Executive",
+      from: "Medanta The Medicity",
+      to: "London Heathrow (Air Transfer)",
+      detail: "International medical repatriation on ECMO support coordinated directly with DEL Terminal 3 airside."
+    }
+  },
+  {
+    name: "Faridabad",
+    slug: "faridabad",
+    airport: "Indira Gandhi International Airport (DEL)",
+    hospitals: ["Amrita Hospital Sector 88", "Asian Institute of Medical Sciences", "Fortis Escorts Hospital Neelam Bata Road", "Sarvodaya Hospital Sector 8"],
+    cremationGrounds: ["AC Nagar Shamshan Ghat", "Sector 8 Crematorium", "Ballabhgarh Ghat"],
+    mortuaries: ["BK Civil Hospital Mortuary Faridabad"],
+    zones: ["Sector 15", "Sector 21", "NIT Faridabad", "Greater Faridabad", "Neharpar", "Ballabhgarh"],
+    geo: { latitude: 28.4089, longitude: 77.3178 },
+    localContext: "Strategic coverage for South NCR and Haryana industrial belt, providing rapid hearse van and freezer box services connecting Amrita Hospital and Asian Institute to Delhi.",
+    caseStudy: {
+      patient: "Critical Patient",
+      from: "Amrita Hospital Sector 88",
+      to: "AIIMS Delhi",
+      detail: "Emergency ventilator ambulance transit via Delhi-Faridabad Skyway."
+    }
+  },
+  {
+    name: "Ghaziabad",
+    slug: "ghaziabad",
+    airport: "Hindon Airport (HDO) / IGI Airport (DEL)",
+    hospitals: ["Max Super Speciality Vaishali", "Yashoda Super Speciality Kaushambi", "Manipal Hospital NH 24", "Columbia Asia"],
+    cremationGrounds: ["Hindon Ghat Electric Crematorium", "Vaishali Shamshan Ghat", "Raj Nagar Muktidham"],
+    mortuaries: ["MMG District Hospital Mortuary", "Sanjay Nagar Combined Hospital"],
+    zones: ["Indirapuram", "Vaishali", "Kaushambi", "Raj Nagar Extension", "Crossings Republik", "Vasundhara"],
+    geo: { latitude: 28.6692, longitude: 77.4538 },
+    localContext: "Swift mortuary logistics and hearse transport along Delhi-Meerut Expressway, with priority ground access to Hindon Ghat electric furnaces and Kaushambi/Vaishali hospitals.",
+    caseStudy: {
+      patient: "Mrs. U. Gupta",
+      from: "Max Hospital Vaishali",
+      to: "Jaipur",
+      detail: "Interstate road transportation in an AC mortuary vehicle with GPS monitoring."
+    }
+  },
+  {
+    name: "Greater Noida",
+    slug: "greater-noida",
+    airport: "Jewar International Airport (DXN) / DEL",
+    hospitals: ["Sharda Hospital Knowledge Park", "Yatharth Super Speciality Omega 1", "Kailash Hospital Knowledge Park", "GIMS"],
+    cremationGrounds: ["Surajpur Crematorium", "Alpha 1 Shamshan Ground", "Kasna Shamshan Ghat"],
+    mortuaries: ["Government Institute of Medical Sciences (GIMS) Mortuary"],
+    zones: ["Knowledge Park", "Pari Chowk", "Alpha 1 & 2", "Omega 1", "Greater Noida West (Noida Extension)"],
+    geo: { latitude: 28.4744, longitude: 77.5040 },
+    localContext: "Serving universities, residential complexes, and tech parks around Pari Chowk and Noida Extension with doorstep mortuary cabinets and highway ambulance transit.",
+    caseStudy: {
+      patient: "Student Trauma Case",
+      from: "Sharda Hospital",
+      to: "Max Saket Delhi",
+      detail: "Bed-to-bed neurological evacuation handled via Noida-Greater Noida Expressway."
+    }
+  },
+  {
+    name: "South Delhi",
+    slug: "south-delhi",
+    airport: "Indira Gandhi International Airport (DEL)",
+    hospitals: ["Max Super Speciality Saket", "Apollo Hospital Jasola", "Fortis Escorts Okhla", "AIIMS New Delhi", "Safdarjung Hospital"],
+    cremationGrounds: ["Lodhi Road Electric Crematorium", "Green Park Shamshan Ghat", "Madangir Crematorium"],
+    mortuaries: ["AIIMS Mortuary Center", "Safdarjung Cold Storage"],
+    zones: ["Saket", "Hauz Khas", "Vasant Kunj", "Greater Kailash", "Lajpat Nagar", "Defence Colony"],
+    geo: { latitude: 28.5245, longitude: 77.2066 },
+    localContext: "Home to India's top multispeciality institutions like Max Saket and AIIMS. We guarantee 15-minute response across GK, Saket, and Vasant Kunj for freezer boxes and hearse vehicles to Lodhi Road.",
+    caseStudy: {
+      patient: "D. Kapoor",
+      from: "Max Saket",
+      to: "Geneva, Switzerland",
+      detail: "Bed-to-bed international aero-medical transfer coordinated directly through DEL airport."
+    }
+  },
+  {
+    name: "Dwarka",
+    slug: "dwarka",
+    airport: "Indira Gandhi International Airport (DEL) - 10 Mins Proximity",
+    hospitals: ["Venkateshwar Hospital Sector 18", "Manipal Hospital Sector 6", "Indira Gandhi Hospital Sector 9", "Aakash Healthcare Sector 3"],
+    cremationGrounds: ["Sector 24 Dwarka Crematorium", "Janakpuri Shamshan Ghat", "Kakrola Cremation Ground"],
+    mortuaries: ["DDU Hospital Mortuary Hari Nagar", "Indira Gandhi Hospital Cold Storage"],
+    zones: ["Sector 6", "Sector 10", "Sector 12", "Sector 21", "Sector 23", "Dwarka Expressway"],
+    geo: { latitude: 28.5921, longitude: 77.0460 },
+    localContext: "Located immediately adjacent to IGI Airport (DEL). Primary launchpad for our airport cargo body transfer and instant freezer box dispatch across all Dwarka sub-city sectors.",
+    caseStudy: {
+      patient: "Repatriation Handover",
+      from: "Venkateshwar Hospital",
+      to: "DEL Cargo Terminal",
+      detail: "Airport cargo coffin handover completed in under 45 minutes from hospital discharge."
+    }
+  },
+  {
+    name: "Rohini",
+    slug: "rohini",
+    airport: "Indira Gandhi International Airport (DEL)",
+    hospitals: ["Rajiv Gandhi Cancer Institute", "Saroj Super Speciality Sector 14", "Fortis Hospital Shalimar Bagh", "Max Hospital Pitampura"],
+    cremationGrounds: ["Sector 16 Rohini Crematorium", "Sector 24 Rohini Ghat", "Pitampura Shamshan Ghat"],
+    mortuaries: ["Dr. BSA Hospital Mortuary Sector 6 Rohini"],
+    zones: ["Sector 3", "Sector 7", "Sector 8", "Sector 13", "Sector 16", "Pitampura", "Prashant Vihar"],
+    geo: { latitude: 28.7166, longitude: 77.1194 },
+    localContext: "North-West Delhi command center serving Rohini sectors, Pitampura, and Outer Ring Road with 24/7 antim sanskar coordination and oncology patient medical shifts.",
+    caseStudy: {
+      patient: "Oncology Patient",
+      from: "Rajiv Gandhi Cancer Institute",
+      to: "Kolkata",
+      detail: "Commercial stretcher patient flight coordinated with ground ICU ambulances at both ends."
+    }
+  },
+  {
+    name: "Navi Mumbai",
+    slug: "navi-mumbai",
+    airport: "Navi Mumbai International Airport (NMI) / BOM",
+    hospitals: ["Apollo Hospitals Belapur", "Fortis Hiranandani Vashi", "MGM Hospital Vashi", "Terna Speciality Nerul"],
+    cremationGrounds: ["Vashi Sector 9 Crematorium", "Turbhe Shamshan", "Belapur Electric Cremation Ground", "Kharghar Crematorium"],
+    mortuaries: ["NMMC General Hospital Vashi Mortuary", "Apollo Belapur Cold Storage"],
+    zones: ["Vashi", "Belapur", "Kharghar", "Nerul", "Panvel", "Kopar Khairane", "Seawoods"],
+    geo: { latitude: 19.0330, longitude: 73.0297 },
+    localContext: "Covering the expanding satellite city with rapid transit via Palm Beach Road and Sion-Panvel Highway to Vashi Sector 9 and Belapur crematoriums.",
+    caseStudy: {
+      patient: "Cardiac Emergency",
+      from: "Apollo Belapur",
+      to: "Nanavati Max Mumbai",
+      detail: "Corridor ICU ambulance transfer executed smoothly during evening rush."
+    }
+  },
+  {
+    name: "Thane",
+    slug: "thane",
+    airport: "Chhatrapati Shivaji Maharaj International Airport (BOM)",
+    hospitals: ["Jupiter Hospital Eastern Express Highway", "Bethany Hospital", "Kaushalya Medical Foundation", "Currae Speciality"],
+    cremationGrounds: ["Jawahar Baug Crematorium", "Wagle Estate Cremation Ground", "Kopri Ghat"],
+    mortuaries: ["Thane Civil Hospital Mortuary", "Jupiter Hospital Cold Storage"],
+    zones: ["Majiwada", "Ghodbunder Road", "Naupada", "Vartak Nagar", "Hiranandani Estate", "Kasarvadavali"],
+    geo: { latitude: 19.2183, longitude: 72.9781 },
+    localContext: "Connecting Ghodbunder Road and Central Thane with rapid mortuary transport, hospital bed-to-bed shifts, and dignified funeral logistics.",
+    caseStudy: {
+      patient: "R. Nair",
+      from: "Jupiter Thane",
+      to: "Singapore",
+      detail: "Multi-organ failure management during international flight transit."
+    }
+  },
+  {
+    name: "Andheri",
+    slug: "andheri",
+    airport: "Chhatrapati Shivaji Maharaj International Airport (BOM) - In-City Access",
+    hospitals: ["Kokilaben Dhirubhai Ambani Hospital", "CritiCare Hospital", "SevenHills Hospital Marol", "Holy Spirit Hospital"],
+    cremationGrounds: ["Oshiwara Electric Crematorium (Jogeshwari West)", "Chakala Shamshan Ghat", "Parsiwada Crematorium"],
+    mortuaries: ["Cooper Hospital Mortuary Juhu Vile Parle", "SevenHills Cold Storage"],
+    zones: ["Lokhandwala", "Versova", "Marol", "MIDC", "J.B. Nagar", "Andheri West", "Andheri East"],
+    geo: { latitude: 19.1136, longitude: 72.8697 },
+    localContext: "Located right next to Mumbai Airport (BOM). Prime operational node for Kokilaben Ambani Hospital transfers and immediate hearse vehicle dispatch to Oshiwara crematorium.",
+    caseStudy: {
+      patient: "International Repatriation",
+      from: "Kokilaben Hospital",
+      to: "BOM Cargo Terminal",
+      detail: "Hermetically sealed coffin packaging and customs clearance completed in under 3 hours."
+    }
+  },
+  {
+    name: "Bandra",
+    slug: "bandra",
+    airport: "Chhatrapati Shivaji Maharaj International Airport (BOM)",
+    hospitals: ["Lilavati Hospital Bandra Reclamation", "Holy Family Hospital", "Bhabha Hospital Bandra West"],
+    cremationGrounds: ["Santacruz Hindu Crematorium", "Bandra West Cemetery", "Khar Shamshan Ghat"],
+    mortuaries: ["KB Bhabha Hospital Cold Storage", "Lilavati Hospital Mortuary"],
+    zones: ["Bandra West", "Pali Hill", "Bandra Kurla Complex (BKC)", "Khar West", "Bandra Reclamation"],
+    geo: { latitude: 19.0596, longitude: 72.8295 },
+    localContext: "Serving Mumbai's western coastline and BKC commercial hub with premier AC hearse vans, floral tribute setups, and Lilavati Hospital patient repatriations.",
+    caseStudy: {
+      patient: "Cardiac Emergency",
+      from: "Lilavati Hospital",
+      to: "Dubai",
+      detail: "Charter jet air ambulance dispatched within 3 hours of hospital green signal."
+    }
+  },
+  {
+    name: "Whitefield",
+    slug: "whitefield",
+    airport: "Kempegowda International Airport (BLR)",
+    hospitals: ["Manipal Hospital Whitefield", "Vydehi Institute of Medical Sciences", "Columbia Asia (Manipal) ITPL", "Sri Sathya Sai Hospital"],
+    cremationGrounds: ["Hope Farm Electric Crematorium", "Kadugodi Shamshan Ghat", "Mahadevapura Crematorium"],
+    mortuaries: ["Vydehi Medical College Mortuary", "Manipal Whitefield Cold Storage"],
+    zones: ["ITPL Road", "Hope Farm", "Kadugodi", "Hoodi", "ECC Road", "Brookefield", "Channasandra"],
+    geo: { latitude: 12.9698, longitude: 77.7499 },
+    localContext: "Dedicated fleet stationed at Hope Farm and ITPL for Bangalore's tech corridor. 15-minute doorstep delivery of dead body freezer boxes and direct airport hearse transit via SH 104.",
+    caseStudy: {
+      patient: "Tech Professional Case",
+      from: "Manipal Hospital Whitefield",
+      to: "Delhi NCR",
+      detail: "Deceased mortal remains transport by flight with complete embalming and cargo clearance."
+    }
+  },
+  {
+    name: "Koramangala",
+    slug: "koramangala",
+    airport: "Kempegowda International Airport (BLR) / HAL Airport",
+    hospitals: ["St. John's Medical College Hospital", "Apollo Spectra Koramangala"],
+    cremationGrounds: ["Wilson Garden Electric Crematorium", "Madiwala Cremation Ground", "Tavarekere Ghat"],
+    mortuaries: ["St. John's Mortuary Cold Storage"],
+    zones: ["Koramangala Blocks 1-8", "Madiwala", "Ejipura", "Sony World Signal", "ST Bed Layout"],
+    geo: { latitude: 12.9352, longitude: 77.6245 },
+    localContext: "Connecting South Bangalore's central hub with St. John's Medical College Hospital and instant mortuary vehicle support to Wilson Garden crematorium.",
+    caseStudy: {
+      patient: "Critical ICU Shift",
+      from: "St. John's Hospital",
+      to: "Hyderabad",
+      detail: "Interstate ICU ventilator road transport executed safely over 560 KM."
+    }
+  },
+  {
+    name: "Electronic City",
+    slug: "electronic-city",
+    airport: "Kempegowda International Airport (BLR)",
+    hospitals: ["Narayana Health City (Narayana Hrudayalaya)", "Mazumdar Shaw Cancer Centre", "Kauvery Hospital"],
+    cremationGrounds: ["Bommasandra Crematorium", "Hebbagodi Shamshan Ghat", "Attibele Cremation Ground"],
+    mortuaries: ["Narayana Health City Mortuary Cold Storage"],
+    zones: ["Phase 1", "Phase 2", "Bommasandra", "Huskur", "Doddathoguru", "Attibele"],
+    geo: { latitude: 12.8399, longitude: 77.6770 },
+    localContext: "Serving Narayana Health City, the cardiac capital of India. Immediate bed-to-bed transfers to BLR airport and local freezer box setups across Phase 1 and Bommasandra.",
+    caseStudy: {
+      patient: "Cardiac Transplant Followup",
+      from: "Narayana Hrudayalaya",
+      to: "Dhaka, Bangladesh",
+      detail: "International aero-medical flight with pediatric cardiac team on board."
+    }
+  },
+  {
+    name: "Gachibowli",
+    slug: "gachibowli",
+    airport: "Rajiv Gandhi International Airport (HYD)",
+    hospitals: ["AIG Hospitals Gachibowli", "Care Hospital Hi-Tech City", "Continental Hospitals Financial District"],
+    cremationGrounds: ["Mahaprasthanam (Whisper Valley Jubilee Hills)", "Gachibowli Shamshan Ghat", "Serilingampally Crematorium"],
+    mortuaries: ["Continental Hospital Cold Storage", "AIG Mortuary Care"],
+    zones: ["Financial District", "Nanakramguda", "Telecom Nagar", "IIIT Junction", "Kondapur"],
+    geo: { latitude: 17.4401, longitude: 78.3489 },
+    localContext: "Hyderabad's IT and medical tourism capital. 20-minute direct connectivity to RGIA via Outer Ring Road (ORR) and funeral management at the state-of-the-art Mahaprasthanam.",
+    caseStudy: {
+      patient: "Liver Transplant Case",
+      from: "AIG Hospitals Gachibowli",
+      to: "Dubai Medical Center",
+      detail: "International air charter with specialized liver-perfusion team."
+    }
+  },
+  {
+    name: "Secunderabad",
+    slug: "secunderabad",
+    airport: "Rajiv Gandhi International Airport (HYD)",
+    hospitals: ["KIMS Hospitals Minister Road", "Yashoda Hospitals Secunderabad", "Sunshine Hospital", "Apollo Secunderabad"],
+    cremationGrounds: ["Bansilalpet Hindu Shamshan Ghat", "West Marredpally Crematorium", "Ranigunj Ghat"],
+    mortuaries: ["Gandhi Medical College & Hospital Mortuary", "KIMS Cold Storage"],
+    zones: ["Marredpally", "Begumpet", "Paradise", "Trimulgherry", "Sainikpuri", "Bowenpally"],
+    geo: { latitude: 17.4399, longitude: 78.4983 },
+    localContext: "Connecting the Twin Cities healthcare network with KIMS and Yashoda hospitals, providing 24/7 antim sanskar rites at Bansilalpet and direct railway station mortuary transfer.",
+    caseStudy: {
+      patient: "Trauma Case",
+      from: "Yashoda Secunderabad",
+      to: "AIIMS Delhi",
+      detail: "Charter jet evacuation handled with zero-delay air traffic green corridor."
+    }
   }
 ];
 

@@ -2,9 +2,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useForm, ValidationError } from "@formspree/react";
+import { trackFormSubmit } from "@/utils/analytics";
 
 const ContactForm = () => {
   const [state, handleSubmit] = useForm("xqakqzdb");
+
+  React.useEffect(() => {
+    if (state.succeeded) {
+      trackFormSubmit("Global Contact / Callback Form");
+    }
+  }, [state.succeeded]);
 
   return (
     <motion.div

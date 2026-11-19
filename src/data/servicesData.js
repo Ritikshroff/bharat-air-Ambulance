@@ -15,8 +15,17 @@ export const servicesData = [
   {
     id: "air-ambulance",
     name: "Air Ambulance",
+    hindiName: "हवाई एम्बुलेंस सेवा (Air Ambulance)",
+    alternateNames: [
+      "Medical Flight Transfer",
+      "ICU Air Charter",
+      "Aero-Medical Evacuation",
+      "हवाई एम्बुलेंस",
+    ],
     slugPrefix: "air-ambulance-service-in-",
     title: "Global Air Ambulance & Medical Repatriation",
+    quickAnswer:
+      "Air ambulance service provides bed-to-bed emergency aero-medical transport for critical patients requiring ICU support. Equipped with ventilators, cardiac monitors, and onboard doctor teams, flights are activated within 2 to 4 hours across India and internationally.",
     imgSrc: "/images/slide1.jpg",
     icon: <FaStarOfLife className="text-medical-red" />,
     shortDesc:
@@ -34,8 +43,17 @@ export const servicesData = [
   {
     id: "freezer-box-services",
     name: "Dead Body Freezer Box",
+    hindiName: "डेड बॉडी फ्रीज़र बॉक्स (Dead Body Freezer Box on Rent)",
+    alternateNames: [
+      "Mobile Mortuary Cabinet",
+      "Dead Body Cold Storage Box",
+      "फ्रीजर बॉक्स रेंट",
+      "शव सुरक्षित पेटी",
+    ],
     slugPrefix: "dead-body-freezer-box-in-",
     title: "Dead Body Freezer Box Services on Rent",
+    quickAnswer:
+      "A dead body freezer box is a portable stainless steel mortuary cooling cabinet maintaining sub-zero temperatures (-2°C to -15°C) to preserve mortal remains safely at home for 24 to 72+ hours. Delivery and installation are completed within 30 to 45 minutes 24/7.",
     imgSrc: "/images/Freezer-Box.jpg",
     icon: <FaBox />,
     shortDesc:
@@ -53,8 +71,18 @@ export const servicesData = [
   {
     id: "hearse-van-services",
     name: "Hearse Van Services",
+    hindiName: "शव वाहन सेवा (Hearse Van Service / Shav Vahan)",
+    alternateNames: [
+      "Shav Vahan",
+      "Moksha Vahini",
+      "Mortuary Ambulance",
+      "Funeral Van",
+      "शव वाहन",
+    ],
     slugPrefix: "hearse-van-service-in-",
     title: "Dignified Hearse Van & Mortuary Vehicle Services",
+    quickAnswer:
+      "Hearse van service provides dignified, respectful transportation of deceased persons from hospital or residence to cremation grounds, burial sites, or hometowns. Available 24/7 in AC and non-AC formats with specialized stretcher trays, floral decor, and family seating.",
     imgSrc: "/images/hearse-van.jpeg",
     icon: <FaAmbulance />,
     shortDesc: "Professional and respectful mortuary transportation for the departed.",
@@ -71,8 +99,17 @@ export const servicesData = [
   {
     id: "cremation-services",
     name: "Cremation Services",
+    hindiName: "अंतिम संस्कार सेवा (Antim Sanskar / Cremation Services)",
+    alternateNames: [
+      "Antim Sanskar Seva",
+      "Electric Cremation Booking",
+      "Funeral Rites Management",
+      "दाह संस्कार सेवा",
+    ],
     slugPrefix: "cremation-services-in-",
     title: "Complete Antim Sanskar & Cremation Management",
+    quickAnswer:
+      "Cremation services provide end-to-end management for Hindu, Sikh, Jain, and all traditional last rites. We coordinate electric crematorium and wood pyre slot booking, deliver authentic Vedic samagri kits, arrange learned priests, and assist with municipal death documentation.",
     imgSrc: "/images/cremation1.jpeg",
     icon: <FaChurch />,
     shortDesc:
@@ -90,8 +127,17 @@ export const servicesData = [
   {
     id: "dead-body-transportation",
     name: "Dead Body Transportation",
+    hindiName: "शव परिवहन सेवा (Dead Body Transport Road / Train / Flight)",
+    alternateNames: [
+      "Dead Body Transport by Flight",
+      "Interstate Mortuary Ambulance",
+      "Dead Body Train Cargo",
+      "शव ले जाने वाली एम्बुलेंस",
+    ],
     slugPrefix: "dead-body-transportation-in-",
     title: "Interstate Dead Body Transportation by Road, Train & Flight",
+    quickAnswer:
+      "Dead body transportation provides legally compliant transfer of deceased individuals across Indian states via dedicated AC mortuary ambulances, airline cargo flights, or Indian Railways. Includes mandatory clinical embalming, hermetically sealed zinc coffins, and police NOC clearances.",
     imgSrc: "/images/dead-body-transportation.jpeg",
     icon: <FaAmbulance />,
     shortDesc: "Safe, legal, and timely transportation of the deceased across Indian states.",
@@ -108,8 +154,17 @@ export const servicesData = [
   {
     id: "repatriation-services",
     name: "International Repatriation",
+    hindiName: "अंतर्राष्ट्रीय शव प्रत्यावर्तन (International Repatriation)",
+    alternateNames: [
+      "Mortal Remains Repatriation",
+      "Body Repatriation from Abroad",
+      "Dead Body Flight Cargo Customs",
+      "विदेश से शव लाना",
+    ],
     slugPrefix: "dead-body-repatriation-in-",
     title: "International & Domestic Mortal Remains Repatriation",
+    quickAnswer:
+      "International repatriation manages the diplomatic, medical, and airline cargo logistics to bring mortal remains into or out of India. Services include Indian Embassy NOC, Ministry of External Affairs clearance, Airport Health Organization (APHO) customs quarantine, and IATA coffin transport.",
     imgSrc: "/images/slide1.jpg",
     icon: <FaGlobe className="text-medical-blue" />,
     shortDesc:
@@ -127,8 +182,17 @@ export const servicesData = [
   {
     id: "funeral-services",
     name: "Funeral Services",
+    hindiName: "संपूर्ण अंतिम संस्कार प्रबंधन (Funeral Management)",
+    alternateNames: [
+      "Complete Funeral Management",
+      "Memorial Services Coordination",
+      "Shraddhanjali Samagri",
+      "अंतिम यात्रा सेवा",
+    ],
     slugPrefix: "funeral-services-in-",
     title: "End-to-End Dignified Funeral Management",
+    quickAnswer:
+      "Funeral services offer compassionate 360-degree support for bereaved families. We manage the hearse van, mortuary freezer box, cremation/burial ground booking, floral tributes, priest services, and memorial prayer hall arrangements.",
     imgSrc: "/images/hearse-van.jpeg",
     icon: <FaHandsHelping />,
     shortDesc: "Compassionate planning and coordination for a dignified farewell.",
@@ -145,8 +209,17 @@ export const servicesData = [
   {
     id: "asthi-visarjan",
     name: "Asthi Visarjan",
+    hindiName: "पवित्र अस्थि विसर्जन सेवा (Asthi Visarjan Services)",
+    alternateNames: [
+      "Holy Ash Immersion",
+      "Asthi Visarjan Kashi Haridwar",
+      "Vedic Pind Daan",
+      "अस्थि विसर्जन गंगा",
+    ],
     slugPrefix: "asthi-visarjan-services-in-",
     title: "Sacred Asthi Visarjan Services (Holy Immersion)",
+    quickAnswer:
+      "Asthi Visarjan service facilitates sacred holy immersion rituals at Varanasi (Ganga Ghats), Haridwar (Har Ki Pauri), Prayagraj (Triveni Sangam), and Rameswaram. We provide verified teerth purohits, ritual samagri, boat arrangements, and domestic/international asthi courier services.",
     imgSrc: "/images/asthi-visarjan.jpeg",
     icon: <FaChurch />,
     shortDesc:
